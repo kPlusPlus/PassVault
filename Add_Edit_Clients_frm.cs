@@ -34,9 +34,8 @@ namespace PassVault
 
         private void FillDataGridView()
         {
-            //DataSet ds = new DataSet();
             string Query = "SELECT * FROM dbo.Clients_tbl;";
-            common.ds = common.GetDataSet(Query);            
+            common.ds = common.GetDataSet(Query);
 
             bindingSource1.DataSource = common.ds;
             bindingSource1.DataMember = common.ds.Tables[0].TableName;
@@ -52,7 +51,7 @@ namespace PassVault
             ID_txt.DataBindings.Add("Text", bindingSource1, "ID");
             Client_ID_txt.DataBindings.Add("Text", bindingSource1, "ClientID");
             Client_Name_txt.DataBindings.Add("Text", bindingSource1, "Name");
-            OIB_txt.DataBindings.Add("Text",bindingSource1, "OIB");
+            OIB_txt.DataBindings.Add("Text", bindingSource1, "OIB");
             City_txt.DataBindings.Add("Text", bindingSource1, "Address_City");
             PO_txt.DataBindings.Add("Text", bindingSource1, "PO");
             Street_txt.DataBindings.Add("Text", bindingSource1, "Address_Street");
@@ -72,9 +71,59 @@ namespace PassVault
                 common.adapter.Update(common.ds, common.ds.Tables[0].TableName);
                 MessageBox.Show("Data saved successfully. ");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.ToString());
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            dgvClients.ClearSelection();
+            if (dgvClients.Rows.Count > 0)
+            {
+                dgvClients.Rows[0].Selected = true;
+                dgvClients.CurrentCell = dgvClients.Rows[0].Cells[0];
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            dgvClients.ClearSelection();
+            if (dgvClients.Rows.Count > 0)
+            {
+                int lastIndex = dgvClients.Rows.Count - 2;
+                dgvClients.Rows[lastIndex].Selected = true;
+                dgvClients.CurrentCell = dgvClients.Rows[lastIndex].Cells[0];
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int currentRowIndex = dgvClients.CurrentRow.Index;
+            int nextIndex = currentRowIndex + 1;
+
+            if (nextIndex < dgvClients.Rows.Count)
+            {
+                dgvClients.ClearSelection();
+                dgvClients.Rows[nextIndex].Selected = true;
+                dgvClients.CurrentCell = dgvClients.Rows[nextIndex].Cells[0];
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (dgvClients.CurrentRow != null)
+            {
+                int currentIndex = dgvClients.CurrentRow.Index;
+                int previousIndex = currentIndex - 1;
+
+                if (previousIndex >= 0)
+                {
+                    dgvClients.ClearSelection();
+                    dgvClients.Rows[previousIndex].Selected = true;
+                    dgvClients.CurrentCell = dgvClients.Rows[previousIndex].Cells[0];
+                }
             }
         }
     }

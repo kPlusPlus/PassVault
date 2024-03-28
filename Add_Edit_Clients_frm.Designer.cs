@@ -390,6 +390,7 @@
             button5.TabIndex = 19;
             button5.Text = ">]";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -400,6 +401,7 @@
             button6.TabIndex = 18;
             button6.Text = ">";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -410,6 +412,7 @@
             button7.TabIndex = 17;
             button7.Text = "<";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -420,6 +423,7 @@
             button8.TabIndex = 16;
             button8.Text = "[<";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -458,8 +462,10 @@
             dgvClients.AllowUserToOrderColumns = true;
             dgvClients.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             dgvClients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvClients.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvClients.Location = new System.Drawing.Point(516, 68);
+            dgvClients.MultiSelect = false;
             dgvClients.Name = "dgvClients";
             dgvClients.Size = new System.Drawing.Size(618, 567);
             dgvClients.TabIndex = 42;
@@ -576,9 +582,9 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.DataGridView dgvClients;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.DataGridView dgvClients;
     }
 }
