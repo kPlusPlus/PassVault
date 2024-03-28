@@ -18,8 +18,8 @@ namespace PassVault
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Main_frm());
             //Application.Run(new Login_frm());
-
-            Application.Run(new Add_Edit_Clients_frm());
+            //Application.Run(new Add_Edit_Clients_frm());
+            Application.Run(new Add_Edit_PassVault_Records_frm());
         }
     }
 }

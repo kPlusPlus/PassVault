@@ -28,355 +28,425 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Exit_botun = new System.Windows.Forms.Button();
-            this.Search_botun = new System.Windows.Forms.Button();
-            this.LastRec_botun = new System.Windows.Forms.Button();
-            this.NextRec_botun = new System.Windows.Forms.Button();
-            this.PrevRec_botun = new System.Windows.Forms.Button();
-            this.FirstRec_botun = new System.Windows.Forms.Button();
-            this.Undo_botun = new System.Windows.Forms.Button();
-            this.New_botun = new System.Windows.Forms.Button();
-            this.Save_botun = new System.Windows.Forms.Button();
-            this.Edit_botun = new System.Windows.Forms.Button();
-            this.Comment_lbl = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.Description_lbl = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.Client_lbl = new System.Windows.Forms.Label();
-            this.Client_ID_lbl = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.Heading_lbl = new System.Windows.Forms.Label();
-            this.ID_lbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.AL__lbl = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Username_lbl = new System.Windows.Forms.Label();
-            this.Password_lbl = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // Exit_botun
-            // 
-            this.Exit_botun.Location = new System.Drawing.Point(414, 386);
-            this.Exit_botun.Name = "Exit_botun";
-            this.Exit_botun.Size = new System.Drawing.Size(42, 40);
-            this.Exit_botun.TabIndex = 17;
-            this.Exit_botun.Text = "Exit";
-            this.Exit_botun.UseVisualStyleBackColor = true;
-            this.Exit_botun.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // Search_botun
-            // 
-            this.Search_botun.Location = new System.Drawing.Point(369, 386);
-            this.Search_botun.Name = "Search_botun";
-            this.Search_botun.Size = new System.Drawing.Size(42, 40);
-            this.Search_botun.TabIndex = 16;
-            this.Search_botun.Text = "Q";
-            this.Search_botun.UseVisualStyleBackColor = true;
-            // 
-            // LastRec_botun
-            // 
-            this.LastRec_botun.Location = new System.Drawing.Point(324, 386);
-            this.LastRec_botun.Name = "LastRec_botun";
-            this.LastRec_botun.Size = new System.Drawing.Size(42, 40);
-            this.LastRec_botun.TabIndex = 15;
-            this.LastRec_botun.Text = ">]";
-            this.LastRec_botun.UseVisualStyleBackColor = true;
-            // 
-            // NextRec_botun
-            // 
-            this.NextRec_botun.Location = new System.Drawing.Point(279, 386);
-            this.NextRec_botun.Name = "NextRec_botun";
-            this.NextRec_botun.Size = new System.Drawing.Size(42, 40);
-            this.NextRec_botun.TabIndex = 14;
-            this.NextRec_botun.Text = ">";
-            this.NextRec_botun.UseVisualStyleBackColor = true;
-            // 
-            // PrevRec_botun
-            // 
-            this.PrevRec_botun.Location = new System.Drawing.Point(234, 386);
-            this.PrevRec_botun.Name = "PrevRec_botun";
-            this.PrevRec_botun.Size = new System.Drawing.Size(42, 40);
-            this.PrevRec_botun.TabIndex = 13;
-            this.PrevRec_botun.Text = "<";
-            this.PrevRec_botun.UseVisualStyleBackColor = true;
-            // 
-            // FirstRec_botun
-            // 
-            this.FirstRec_botun.Location = new System.Drawing.Point(189, 386);
-            this.FirstRec_botun.Name = "FirstRec_botun";
-            this.FirstRec_botun.Size = new System.Drawing.Size(42, 40);
-            this.FirstRec_botun.TabIndex = 12;
-            this.FirstRec_botun.Text = "[<";
-            this.FirstRec_botun.UseVisualStyleBackColor = true;
-            // 
-            // Undo_botun
-            // 
-            this.Undo_botun.Location = new System.Drawing.Point(144, 386);
-            this.Undo_botun.Name = "Undo_botun";
-            this.Undo_botun.Size = new System.Drawing.Size(42, 40);
-            this.Undo_botun.TabIndex = 11;
-            this.Undo_botun.Text = "Undo";
-            this.Undo_botun.UseVisualStyleBackColor = true;
-            // 
-            // New_botun
-            // 
-            this.New_botun.Location = new System.Drawing.Point(99, 386);
-            this.New_botun.Name = "New_botun";
-            this.New_botun.Size = new System.Drawing.Size(42, 40);
-            this.New_botun.TabIndex = 10;
-            this.New_botun.Text = "New";
-            this.New_botun.UseVisualStyleBackColor = true;
-            // 
-            // Save_botun
-            // 
-            this.Save_botun.Location = new System.Drawing.Point(54, 386);
-            this.Save_botun.Name = "Save_botun";
-            this.Save_botun.Size = new System.Drawing.Size(42, 40);
-            this.Save_botun.TabIndex = 9;
-            this.Save_botun.Text = "Save";
-            this.Save_botun.UseVisualStyleBackColor = true;
-            // 
-            // Edit_botun
-            // 
-            this.Edit_botun.Location = new System.Drawing.Point(9, 386);
-            this.Edit_botun.Name = "Edit_botun";
-            this.Edit_botun.Size = new System.Drawing.Size(42, 40);
-            this.Edit_botun.TabIndex = 8;
-            this.Edit_botun.Text = "Edit";
-            this.Edit_botun.UseVisualStyleBackColor = true;
+            components = new System.ComponentModel.Container();
+            Comment_lbl = new System.Windows.Forms.Label();
+            textBox12 = new System.Windows.Forms.TextBox();
+            textBox11 = new System.Windows.Forms.TextBox();
+            textBox10 = new System.Windows.Forms.TextBox();
+            Description_lbl = new System.Windows.Forms.Label();
+            textBox6 = new System.Windows.Forms.TextBox();
+            Client_lbl = new System.Windows.Forms.Label();
+            Client_ID_lbl = new System.Windows.Forms.Label();
+            textBox2 = new System.Windows.Forms.TextBox();
+            Heading_lbl = new System.Windows.Forms.Label();
+            ID_lbl = new System.Windows.Forms.Label();
+            textBox1 = new System.Windows.Forms.TextBox();
+            textBox14 = new System.Windows.Forms.TextBox();
+            AL__lbl = new System.Windows.Forms.Label();
+            comboBox1 = new System.Windows.Forms.ComboBox();
+            Username_lbl = new System.Windows.Forms.Label();
+            Password_lbl = new System.Windows.Forms.Label();
+            panel1 = new System.Windows.Forms.Panel();
+            pictureBox2 = new System.Windows.Forms.PictureBox();
+            dgvPass = new System.Windows.Forms.DataGridView();
+            bindingSource1 = new System.Windows.Forms.BindingSource(components);
+            panel2 = new System.Windows.Forms.Panel();
+            button1 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
+            button9 = new System.Windows.Forms.Button();
+            button4 = new System.Windows.Forms.Button();
+            button10 = new System.Windows.Forms.Button();
+            button3 = new System.Windows.Forms.Button();
+            button5 = new System.Windows.Forms.Button();
+            button8 = new System.Windows.Forms.Button();
+            button6 = new System.Windows.Forms.Button();
+            button7 = new System.Windows.Forms.Button();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPass).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // Comment_lbl
             // 
-            this.Comment_lbl.AutoSize = true;
-            this.Comment_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Comment_lbl.Location = new System.Drawing.Point(14, 280);
-            this.Comment_lbl.Name = "Comment_lbl";
-            this.Comment_lbl.Size = new System.Drawing.Size(78, 20);
-            this.Comment_lbl.TabIndex = 78;
-            this.Comment_lbl.Text = "Comment";
-            this.Comment_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            Comment_lbl.AutoSize = true;
+            Comment_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            Comment_lbl.Location = new System.Drawing.Point(16, 323);
+            Comment_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Comment_lbl.Name = "Comment_lbl";
+            Comment_lbl.Size = new System.Drawing.Size(78, 20);
+            Comment_lbl.TabIndex = 78;
+            Comment_lbl.Text = "Comment";
+            Comment_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox12
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox12.Location = new System.Drawing.Point(103, 277);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(324, 89);
-            this.textBox12.TabIndex = 7;
+            textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            textBox12.Location = new System.Drawing.Point(120, 320);
+            textBox12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox12.Multiline = true;
+            textBox12.Name = "textBox12";
+            textBox12.Size = new System.Drawing.Size(377, 102);
+            textBox12.TabIndex = 7;
             // 
             // textBox11
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox11.Location = new System.Drawing.Point(103, 235);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(324, 26);
-            this.textBox11.TabIndex = 6;
+            textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            textBox11.Location = new System.Drawing.Point(120, 271);
+            textBox11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new System.Drawing.Size(377, 26);
+            textBox11.TabIndex = 6;
             // 
             // textBox10
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox10.Location = new System.Drawing.Point(103, 203);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(324, 26);
-            this.textBox10.TabIndex = 5;
+            textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            textBox10.Location = new System.Drawing.Point(120, 234);
+            textBox10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new System.Drawing.Size(377, 26);
+            textBox10.TabIndex = 5;
             // 
             // Description_lbl
             // 
-            this.Description_lbl.AutoSize = true;
-            this.Description_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Description_lbl.Location = new System.Drawing.Point(8, 142);
-            this.Description_lbl.Name = "Description_lbl";
-            this.Description_lbl.Size = new System.Drawing.Size(89, 20);
-            this.Description_lbl.TabIndex = 62;
-            this.Description_lbl.Text = "Description";
-            this.Description_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            Description_lbl.AutoSize = true;
+            Description_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            Description_lbl.Location = new System.Drawing.Point(9, 164);
+            Description_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Description_lbl.Name = "Description_lbl";
+            Description_lbl.Size = new System.Drawing.Size(89, 20);
+            Description_lbl.TabIndex = 62;
+            Description_lbl.Text = "Description";
+            Description_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox6
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.Location = new System.Drawing.Point(103, 139);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(324, 58);
-            this.textBox6.TabIndex = 4;
+            textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            textBox6.Location = new System.Drawing.Point(120, 160);
+            textBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox6.Multiline = true;
+            textBox6.Name = "textBox6";
+            textBox6.Size = new System.Drawing.Size(377, 66);
+            textBox6.TabIndex = 4;
             // 
             // Client_lbl
             // 
-            this.Client_lbl.AutoSize = true;
-            this.Client_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Client_lbl.Location = new System.Drawing.Point(48, 73);
-            this.Client_lbl.Name = "Client_lbl";
-            this.Client_lbl.Size = new System.Drawing.Size(49, 20);
-            this.Client_lbl.TabIndex = 60;
-            this.Client_lbl.Text = "Client";
-            this.Client_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            Client_lbl.AutoSize = true;
+            Client_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            Client_lbl.Location = new System.Drawing.Point(56, 84);
+            Client_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Client_lbl.Name = "Client_lbl";
+            Client_lbl.Size = new System.Drawing.Size(49, 20);
+            Client_lbl.TabIndex = 60;
+            Client_lbl.Text = "Client";
+            Client_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Client_ID_lbl
             // 
-            this.Client_ID_lbl.AutoSize = true;
-            this.Client_ID_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Client_ID_lbl.Location = new System.Drawing.Point(169, 108);
-            this.Client_ID_lbl.Name = "Client_ID_lbl";
-            this.Client_ID_lbl.Size = new System.Drawing.Size(70, 20);
-            this.Client_ID_lbl.TabIndex = 58;
-            this.Client_ID_lbl.Text = "Client ID";
-            this.Client_ID_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            Client_ID_lbl.AutoSize = true;
+            Client_ID_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            Client_ID_lbl.Location = new System.Drawing.Point(197, 125);
+            Client_ID_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Client_ID_lbl.Name = "Client_ID_lbl";
+            Client_ID_lbl.Size = new System.Drawing.Size(70, 20);
+            Client_ID_lbl.TabIndex = 58;
+            Client_ID_lbl.Text = "Client ID";
+            Client_ID_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(245, 105);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(90, 26);
-            this.textBox2.TabIndex = 2;
+            textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            textBox2.Location = new System.Drawing.Point(286, 121);
+            textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new System.Drawing.Size(104, 26);
+            textBox2.TabIndex = 2;
             // 
             // Heading_lbl
             // 
-            this.Heading_lbl.AutoSize = true;
-            this.Heading_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Heading_lbl.Location = new System.Drawing.Point(140, 26);
-            this.Heading_lbl.Name = "Heading_lbl";
-            this.Heading_lbl.Size = new System.Drawing.Size(222, 20);
-            this.Heading_lbl.TabIndex = 56;
-            this.Heading_lbl.Text = "Add / Edit Pass Vault Records";
+            Heading_lbl.AutoSize = true;
+            Heading_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            Heading_lbl.Location = new System.Drawing.Point(163, 30);
+            Heading_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Heading_lbl.Name = "Heading_lbl";
+            Heading_lbl.Size = new System.Drawing.Size(289, 24);
+            Heading_lbl.TabIndex = 56;
+            Heading_lbl.Text = "Add / Edit Pass Vault Records";
             // 
             // ID_lbl
             // 
-            this.ID_lbl.AutoSize = true;
-            this.ID_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ID_lbl.Location = new System.Drawing.Point(71, 110);
-            this.ID_lbl.Name = "ID_lbl";
-            this.ID_lbl.Size = new System.Drawing.Size(26, 20);
-            this.ID_lbl.TabIndex = 54;
-            this.ID_lbl.Text = "ID";
-            this.ID_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            ID_lbl.AutoSize = true;
+            ID_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            ID_lbl.Location = new System.Drawing.Point(83, 127);
+            ID_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            ID_lbl.Name = "ID_lbl";
+            ID_lbl.Size = new System.Drawing.Size(26, 20);
+            ID_lbl.TabIndex = 54;
+            ID_lbl.Text = "ID";
+            ID_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(103, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(58, 26);
-            this.textBox1.TabIndex = 1;
+            textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            textBox1.Location = new System.Drawing.Point(120, 121);
+            textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(67, 26);
+            textBox1.TabIndex = 1;
             // 
             // textBox14
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox14.Location = new System.Drawing.Point(386, 102);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(41, 26);
-            this.textBox14.TabIndex = 3;
+            textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            textBox14.Location = new System.Drawing.Point(450, 118);
+            textBox14.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new System.Drawing.Size(47, 26);
+            textBox14.TabIndex = 3;
             // 
             // AL__lbl
             // 
-            this.AL__lbl.AutoSize = true;
-            this.AL__lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.AL__lbl.Location = new System.Drawing.Point(354, 108);
-            this.AL__lbl.Name = "AL__lbl";
-            this.AL__lbl.Size = new System.Drawing.Size(29, 20);
-            this.AL__lbl.TabIndex = 91;
-            this.AL__lbl.Text = "AL";
-            this.AL__lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            AL__lbl.AutoSize = true;
+            AL__lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            AL__lbl.Location = new System.Drawing.Point(413, 125);
+            AL__lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            AL__lbl.Name = "AL__lbl";
+            AL__lbl.Size = new System.Drawing.Size(29, 20);
+            AL__lbl.TabIndex = 91;
+            AL__lbl.Text = "AL";
+            AL__lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // comboBox1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(103, 70);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(324, 28);
-            this.comboBox1.TabIndex = 0;
+            comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new System.Drawing.Point(120, 81);
+            comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new System.Drawing.Size(377, 28);
+            comboBox1.TabIndex = 0;
             // 
             // Username_lbl
             // 
-            this.Username_lbl.AutoSize = true;
-            this.Username_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Username_lbl.Location = new System.Drawing.Point(7, 203);
-            this.Username_lbl.Name = "Username_lbl";
-            this.Username_lbl.Size = new System.Drawing.Size(83, 20);
-            this.Username_lbl.TabIndex = 93;
-            this.Username_lbl.Text = "Username";
-            this.Username_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            Username_lbl.AutoSize = true;
+            Username_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            Username_lbl.Location = new System.Drawing.Point(8, 234);
+            Username_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Username_lbl.Name = "Username_lbl";
+            Username_lbl.Size = new System.Drawing.Size(83, 20);
+            Username_lbl.TabIndex = 93;
+            Username_lbl.Text = "Username";
+            Username_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Password_lbl
             // 
-            this.Password_lbl.AutoSize = true;
-            this.Password_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Password_lbl.Location = new System.Drawing.Point(5, 235);
-            this.Password_lbl.Name = "Password_lbl";
-            this.Password_lbl.Size = new System.Drawing.Size(78, 20);
-            this.Password_lbl.TabIndex = 94;
-            this.Password_lbl.Text = "Password";
-            this.Password_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            Password_lbl.AutoSize = true;
+            Password_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            Password_lbl.Location = new System.Drawing.Point(6, 271);
+            Password_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Password_lbl.Name = "Password_lbl";
+            Password_lbl.Size = new System.Drawing.Size(78, 20);
+            Password_lbl.TabIndex = 94;
+            Password_lbl.Text = "Password";
+            Password_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // pictureBox1
+            // panel1
             // 
-            this.pictureBox1.Image = global::PassVault.Properties.Resources.AkdamarLogo2023_100;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 34);
-            this.pictureBox1.TabIndex = 55;
-            this.pictureBox1.TabStop = false;
+            panel1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            panel1.Controls.Add(pictureBox2);
+            panel1.Location = new System.Drawing.Point(0, 0);
+            panel1.Margin = new System.Windows.Forms.Padding(0);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(562, 65);
+            panel1.TabIndex = 95;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.AkdamarLogo2023_100;
+            pictureBox2.Location = new System.Drawing.Point(9, 6);
+            pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new System.Drawing.Size(104, 28);
+            pictureBox2.TabIndex = 18;
+            pictureBox2.TabStop = false;
+            // 
+            // dgvPass
+            // 
+            dgvPass.AllowUserToOrderColumns = true;
+            dgvPass.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dgvPass.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvPass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dgvPass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPass.Location = new System.Drawing.Point(504, 81);
+            dgvPass.MultiSelect = false;
+            dgvPass.Name = "dgvPass";
+            dgvPass.Size = new System.Drawing.Size(45, 434);
+            dgvPass.TabIndex = 96;
+            dgvPass.Visible = false;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            panel2.Controls.Add(button1);
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(button9);
+            panel2.Controls.Add(button4);
+            panel2.Controls.Add(button10);
+            panel2.Controls.Add(button3);
+            panel2.Controls.Add(button5);
+            panel2.Controls.Add(button8);
+            panel2.Controls.Add(button6);
+            panel2.Controls.Add(button7);
+            panel2.Location = new System.Drawing.Point(9, 452);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(539, 63);
+            panel2.TabIndex = 97;
+            // 
+            // button1
+            // 
+            button1.Location = new System.Drawing.Point(10, 9);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(49, 46);
+            button1.TabIndex = 12;
+            button1.Text = "Edit";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new System.Drawing.Point(62, 9);
+            button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(49, 46);
+            button2.TabIndex = 13;
+            button2.Text = "Save";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button9
+            // 
+            button9.Location = new System.Drawing.Point(482, 9);
+            button9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button9.Name = "button9";
+            button9.Size = new System.Drawing.Size(49, 46);
+            button9.TabIndex = 21;
+            button9.Text = "Exit";
+            button9.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new System.Drawing.Point(115, 9);
+            button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button4.Name = "button4";
+            button4.Size = new System.Drawing.Size(49, 46);
+            button4.TabIndex = 14;
+            button4.Text = "New";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button10
+            // 
+            button10.Location = new System.Drawing.Point(430, 9);
+            button10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button10.Name = "button10";
+            button10.Size = new System.Drawing.Size(49, 46);
+            button10.TabIndex = 20;
+            button10.Text = "Q";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new System.Drawing.Point(167, 9);
+            button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button3.Name = "button3";
+            button3.Size = new System.Drawing.Size(49, 46);
+            button3.TabIndex = 15;
+            button3.Text = "Undo";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Location = new System.Drawing.Point(377, 9);
+            button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button5.Name = "button5";
+            button5.Size = new System.Drawing.Size(49, 46);
+            button5.TabIndex = 19;
+            button5.Text = ">]";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button8
+            // 
+            button8.Location = new System.Drawing.Point(220, 9);
+            button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button8.Name = "button8";
+            button8.Size = new System.Drawing.Size(49, 46);
+            button8.TabIndex = 16;
+            button8.Text = "[<";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new System.Drawing.Point(325, 9);
+            button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button6.Name = "button6";
+            button6.Size = new System.Drawing.Size(49, 46);
+            button6.TabIndex = 18;
+            button6.Text = ">";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // button7
+            // 
+            button7.Location = new System.Drawing.Point(272, 9);
+            button7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button7.Name = "button7";
+            button7.Size = new System.Drawing.Size(49, 46);
+            button7.TabIndex = 17;
+            button7.Text = "<";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // Add_Edit_PassVault_Records_frm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 457);
-            this.Controls.Add(this.Password_lbl);
-            this.Controls.Add(this.Username_lbl);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.AL__lbl);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.Exit_botun);
-            this.Controls.Add(this.Search_botun);
-            this.Controls.Add(this.LastRec_botun);
-            this.Controls.Add(this.NextRec_botun);
-            this.Controls.Add(this.PrevRec_botun);
-            this.Controls.Add(this.FirstRec_botun);
-            this.Controls.Add(this.Undo_botun);
-            this.Controls.Add(this.New_botun);
-            this.Controls.Add(this.Save_botun);
-            this.Controls.Add(this.Edit_botun);
-            this.Controls.Add(this.Comment_lbl);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.Description_lbl);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.Client_lbl);
-            this.Controls.Add(this.Client_ID_lbl);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.Heading_lbl);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ID_lbl);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Add_Edit_PassVault_Records_frm";
-            this.Text = "Akdamar Pass Vault";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(561, 527);
+            Controls.Add(panel2);
+            Controls.Add(dgvPass);
+            Controls.Add(Password_lbl);
+            Controls.Add(Username_lbl);
+            Controls.Add(comboBox1);
+            Controls.Add(AL__lbl);
+            Controls.Add(textBox14);
+            Controls.Add(Comment_lbl);
+            Controls.Add(textBox12);
+            Controls.Add(textBox11);
+            Controls.Add(textBox10);
+            Controls.Add(Description_lbl);
+            Controls.Add(textBox6);
+            Controls.Add(Client_lbl);
+            Controls.Add(Client_ID_lbl);
+            Controls.Add(textBox2);
+            Controls.Add(Heading_lbl);
+            Controls.Add(ID_lbl);
+            Controls.Add(textBox1);
+            Controls.Add(panel1);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Add_Edit_PassVault_Records_frm";
+            Text = "Akdamar Pass Vault";
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPass).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
+            panel2.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Exit_botun;
-        private System.Windows.Forms.Button Search_botun;
-        private System.Windows.Forms.Button LastRec_botun;
-        private System.Windows.Forms.Button NextRec_botun;
-        private System.Windows.Forms.Button PrevRec_botun;
-        private System.Windows.Forms.Button FirstRec_botun;
-        private System.Windows.Forms.Button Undo_botun;
-        private System.Windows.Forms.Button New_botun;
-        private System.Windows.Forms.Button Save_botun;
-        private System.Windows.Forms.Button Edit_botun;
         private System.Windows.Forms.Label Comment_lbl;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox11;
@@ -387,7 +457,6 @@
         private System.Windows.Forms.Label Client_ID_lbl;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label Heading_lbl;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label ID_lbl;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox14;
@@ -395,5 +464,20 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label Username_lbl;
         private System.Windows.Forms.Label Password_lbl;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.DataGridView dgvPass;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }

@@ -70,6 +70,7 @@ namespace PassVault
                 bindingSource1.EndEdit();
                 common.adapter.Update(common.ds, common.ds.Tables[0].TableName);
                 MessageBox.Show("Data saved successfully. ");
+                dgvClients.Refresh();
             }
             catch (Exception ex)
             {
@@ -124,6 +125,17 @@ namespace PassVault
                     dgvClients.Rows[previousIndex].Selected = true;
                     dgvClients.CurrentCell = dgvClients.Rows[previousIndex].Cells[0];
                 }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dgvClients.ClearSelection();
+            if (dgvClients.Rows.Count > 0)
+            {
+                int lastIndex = dgvClients.Rows.Count - 1;
+                dgvClients.Rows[lastIndex].Selected = true;
+                dgvClients.CurrentCell = dgvClients.Rows[lastIndex].Cells[0];
             }
         }
     }

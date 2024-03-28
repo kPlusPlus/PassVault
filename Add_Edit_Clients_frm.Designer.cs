@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Edit_Clients_frm));
             ID_txt = new System.Windows.Forms.TextBox();
             ID_lbl = new System.Windows.Forms.Label();
             Heading_lbl = new System.Windows.Forms.Label();
@@ -55,26 +54,26 @@
             Email_txt = new System.Windows.Forms.TextBox();
             Tel_lbl = new System.Windows.Forms.Label();
             Tel_txt = new System.Windows.Forms.TextBox();
-            button1 = new System.Windows.Forms.Button();
-            button2 = new System.Windows.Forms.Button();
-            button3 = new System.Windows.Forms.Button();
-            button4 = new System.Windows.Forms.Button();
-            button5 = new System.Windows.Forms.Button();
-            button6 = new System.Windows.Forms.Button();
-            button7 = new System.Windows.Forms.Button();
-            button8 = new System.Windows.Forms.Button();
-            button9 = new System.Windows.Forms.Button();
-            button10 = new System.Windows.Forms.Button();
-            pictureBox1 = new System.Windows.Forms.PictureBox();
             dgvClients = new System.Windows.Forms.DataGridView();
             bindingSource1 = new System.Windows.Forms.BindingSource(components);
-            panel1 = new System.Windows.Forms.Panel();
+            button7 = new System.Windows.Forms.Button();
+            button6 = new System.Windows.Forms.Button();
+            button8 = new System.Windows.Forms.Button();
+            button5 = new System.Windows.Forms.Button();
+            button3 = new System.Windows.Forms.Button();
+            button10 = new System.Windows.Forms.Button();
+            button4 = new System.Windows.Forms.Button();
+            button9 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
+            button1 = new System.Windows.Forms.Button();
             panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)dgvClients).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
-            panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // ID_txt
@@ -340,68 +339,19 @@
             Tel_txt.Size = new System.Drawing.Size(377, 26);
             Tel_txt.TabIndex = 11;
             // 
-            // button1
+            // dgvClients
             // 
-            button1.Location = new System.Drawing.Point(10, 9);
-            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(49, 46);
-            button1.TabIndex = 12;
-            button1.Text = "Edit";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new System.Drawing.Point(62, 9);
-            button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(49, 46);
-            button2.TabIndex = 13;
-            button2.Text = "Save";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // button3
-            // 
-            button3.Location = new System.Drawing.Point(167, 9);
-            button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(49, 46);
-            button3.TabIndex = 15;
-            button3.Text = "Undo";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new System.Drawing.Point(115, 9);
-            button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(49, 46);
-            button4.TabIndex = 14;
-            button4.Text = "New";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.Location = new System.Drawing.Point(377, 9);
-            button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button5.Name = "button5";
-            button5.Size = new System.Drawing.Size(49, 46);
-            button5.TabIndex = 19;
-            button5.Text = ">]";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
-            // 
-            // button6
-            // 
-            button6.Location = new System.Drawing.Point(325, 9);
-            button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button6.Name = "button6";
-            button6.Size = new System.Drawing.Size(49, 46);
-            button6.TabIndex = 18;
-            button6.Text = ">";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            dgvClients.AllowUserToOrderColumns = true;
+            dgvClients.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dgvClients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvClients.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvClients.Location = new System.Drawing.Point(565, 68);
+            dgvClients.MultiSelect = false;
+            dgvClients.Name = "dgvClients";
+            dgvClients.Size = new System.Drawing.Size(0, 434);
+            dgvClients.TabIndex = 42;
+            dgvClients.Visible = false;
             // 
             // button7
             // 
@@ -414,6 +364,17 @@
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
+            // button6
+            // 
+            button6.Location = new System.Drawing.Point(325, 9);
+            button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button6.Name = "button6";
+            button6.Size = new System.Drawing.Size(49, 46);
+            button6.TabIndex = 18;
+            button6.Text = ">";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // button8
             // 
             button8.Location = new System.Drawing.Point(220, 9);
@@ -425,16 +386,26 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
-            // button9
+            // button5
             // 
-            button9.Location = new System.Drawing.Point(482, 9);
-            button9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(49, 46);
-            button9.TabIndex = 21;
-            button9.Text = "Exit";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click;
+            button5.Location = new System.Drawing.Point(377, 9);
+            button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button5.Name = "button5";
+            button5.Size = new System.Drawing.Size(49, 46);
+            button5.TabIndex = 19;
+            button5.Text = ">]";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new System.Drawing.Point(167, 9);
+            button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button3.Name = "button3";
+            button3.Size = new System.Drawing.Size(49, 46);
+            button3.TabIndex = 15;
+            button3.Text = "Undo";
+            button3.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
@@ -447,39 +418,48 @@
             button10.UseVisualStyleBackColor = true;
             button10.Click += button10_Click;
             // 
-            // pictureBox1
+            // button4
             // 
-            pictureBox1.Image = Properties.Resources.AkdamarLogo2023_100;
-            pictureBox1.Location = new System.Drawing.Point(9, 6);
-            pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(104, 28);
-            pictureBox1.TabIndex = 18;
-            pictureBox1.TabStop = false;
+            button4.Location = new System.Drawing.Point(115, 9);
+            button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button4.Name = "button4";
+            button4.Size = new System.Drawing.Size(49, 46);
+            button4.TabIndex = 14;
+            button4.Text = "New";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
-            // dgvClients
+            // button9
             // 
-            dgvClients.AllowUserToOrderColumns = true;
-            dgvClients.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            dgvClients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            dgvClients.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClients.Location = new System.Drawing.Point(516, 68);
-            dgvClients.MultiSelect = false;
-            dgvClients.Name = "dgvClients";
-            dgvClients.Size = new System.Drawing.Size(618, 567);
-            dgvClients.TabIndex = 42;
+            button9.Location = new System.Drawing.Point(482, 9);
+            button9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button9.Name = "button9";
+            button9.Size = new System.Drawing.Size(49, 46);
+            button9.TabIndex = 21;
+            button9.Text = "Exit";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
-            // panel1
+            // button2
             // 
-            panel1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            panel1.BackgroundImage = (System.Drawing.Image)resources.GetObject("panel1.BackgroundImage");
-            panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new System.Drawing.Point(4, 6);
-            panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(1130, 56);
-            panel1.TabIndex = 43;
+            button2.Location = new System.Drawing.Point(62, 9);
+            button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(49, 46);
+            button2.TabIndex = 13;
+            button2.Text = "Save";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new System.Drawing.Point(10, 9);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(49, 46);
+            button1.TabIndex = 12;
+            button1.Text = "Edit";
+            button1.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -499,11 +479,32 @@
             panel2.Size = new System.Drawing.Size(539, 63);
             panel2.TabIndex = 44;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.AkdamarLogo2023_100;
+            pictureBox1.Location = new System.Drawing.Point(9, 6);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(104, 28);
+            pictureBox1.TabIndex = 18;
+            pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new System.Drawing.Point(0, 0);
+            panel1.Margin = new System.Windows.Forms.Padding(0);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(553, 65);
+            panel1.TabIndex = 43;
+            // 
             // Add_Edit_Clients_frm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1146, 647);
+            ClientSize = new System.Drawing.Size(550, 514);
             Controls.Add(panel2);
             Controls.Add(dgvClients);
             Controls.Add(Tel_lbl);
@@ -535,11 +536,11 @@
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "Add_Edit_Clients_frm";
             Text = "Akdamar Pass Vault";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvClients).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
-            panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -549,7 +550,6 @@
         private System.Windows.Forms.TextBox ID_txt;
         private System.Windows.Forms.Label ID_lbl;
         private System.Windows.Forms.Label Heading_lbl;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Client_ID_lbl;
         private System.Windows.Forms.TextBox Client_ID_txt;
         private System.Windows.Forms.Label Client_Name_lbl;
@@ -572,19 +572,20 @@
         private System.Windows.Forms.TextBox Email_txt;
         private System.Windows.Forms.Label Tel_lbl;
         private System.Windows.Forms.TextBox Tel_txt;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.DataGridView dgvClients;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
