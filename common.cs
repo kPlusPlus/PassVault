@@ -9,16 +9,19 @@ using System.Threading.Tasks;
 namespace PassVault
 {   
 
-    public class common
+    public class Common
     {
         public static string dsnName = "xPVS";
         public static string connectionString = $"DSN={dsnName};";
+        public OdbcDataAdapter adapter;
+        public DataSet ds;
 
         public DataSet GetDataSet(string Query)
         {
             DataSet dataSet = new DataSet();
 
-            OdbcDataAdapter adapter = new OdbcDataAdapter(Query,connectionString);
+            adapter = new OdbcDataAdapter(Query,connectionString);
+            adapter.AcceptChangesDuringUpdate = true;
             adapter.Fill(dataSet);
             return dataSet;
         }

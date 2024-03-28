@@ -61,6 +61,12 @@ namespace PassVault
             if(userid == 0) {
                 MessageBox.Show("Pogrešni username i password !!!");
             }
+            else
+            {
+                Main_frm main_Frm = new Main_frm();
+                main_Frm.Show();
+                this.Hide();
+            }
         }
     }
 }
