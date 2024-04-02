@@ -36,6 +36,7 @@
             Heading_lbl = new System.Windows.Forms.Label();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             button1 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -78,7 +79,7 @@
             // Certificates_botun
             // 
             Certificates_botun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 238);
-            Certificates_botun.Location = new System.Drawing.Point(14, 249);
+            Certificates_botun.Location = new System.Drawing.Point(13, 290);
             Certificates_botun.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Certificates_botun.Name = "Certificates_botun";
             Certificates_botun.Size = new System.Drawing.Size(257, 35);
@@ -90,7 +91,7 @@
             // Exit_botun
             // 
             Exit_botun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 238);
-            Exit_botun.Location = new System.Drawing.Point(13, 291);
+            Exit_botun.Location = new System.Drawing.Point(14, 341);
             Exit_botun.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Exit_botun.Name = "Exit_botun";
             Exit_botun.Size = new System.Drawing.Size(82, 35);
@@ -123,7 +124,7 @@
             // button1
             // 
             button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 238);
-            button1.Location = new System.Drawing.Point(188, 291);
+            button1.Location = new System.Drawing.Point(189, 341);
             button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(82, 35);
@@ -132,11 +133,24 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
+            // button2
+            // 
+            button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 238);
+            button2.Location = new System.Drawing.Point(13, 249);
+            button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(257, 35);
+            button2.TabIndex = 18;
+            button2.Text = "LIcense List";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
+            // 
             // Add_Edit_frm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(290, 347);
+            ClientSize = new System.Drawing.Size(290, 388);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(Heading_lbl);
             Controls.Add(Exit_botun);
@@ -163,5 +177,6 @@
         private System.Windows.Forms.Button Exit_botun;
         private System.Windows.Forms.Label Heading_lbl;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

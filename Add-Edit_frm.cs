@@ -52,5 +52,11 @@ namespace PassVault
             search.Show();
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {           
+            Add_Edit_License add_Edit_License = new Add_Edit_License();
+            add_Edit_License.Show();
+        }
     }
 }

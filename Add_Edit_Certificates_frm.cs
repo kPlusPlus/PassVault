@@ -175,7 +175,7 @@ namespace PassVault
             if (CliendID_txt.Text != string.Empty)
             {
                 comboBox1.SelectedValue = CliendID_txt.Text;
-            }
+            }            
         }
     }
 }

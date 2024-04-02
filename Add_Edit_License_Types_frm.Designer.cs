@@ -305,7 +305,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(712, 425);
+            ClientSize = new System.Drawing.Size(706, 425);
             Controls.Add(dgvLicenceType);
             Controls.Add(panel2);
             Controls.Add(Comment_txt);

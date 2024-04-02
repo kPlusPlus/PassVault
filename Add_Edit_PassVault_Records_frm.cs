@@ -120,7 +120,7 @@ namespace PassVault
         }
 
         private void button6_Click(object sender, EventArgs e)
-        {
+        {            
             int currentRowIndex = dgvPass.CurrentRow.Index;
             int nextIndex = currentRowIndex + 1;
 
