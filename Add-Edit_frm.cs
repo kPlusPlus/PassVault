@@ -25,31 +25,31 @@ namespace PassVault
         private void button1_Click(object sender, EventArgs e)
         {
             var myForm = new Add_Edit_Clients_frm();
-            myForm.ShowDialog();
+            myForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             var myForm = new Add_Edit_PassVault_Records_frm();
-            myForm.ShowDialog();
+            myForm.Show();
         }
 
         private void LIcense_Types_botun_Click(object sender, EventArgs e)
         {
             var myForm = new Add_Edit_License_Types_frm();
-            myForm.ShowDialog();
+            myForm.Show();
         }
 
         private void Certificates_botun_Click(object sender, EventArgs e)
         {
             var myForm = new Add_Edit_Certificates_frm();
-            myForm.ShowDialog();
+            myForm.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             Search_frm search = new Search_frm();
-            search.ShowDialog();
+            search.Show();
 
         }
     }

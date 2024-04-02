@@ -24,8 +24,8 @@ namespace PassVault
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Search_Clients sd = new Search_Clients();
-            sd.ShowDialog();
+            Search_Clients sc = new Search_Clients();
+            sc.Show();
         }
     }
 }

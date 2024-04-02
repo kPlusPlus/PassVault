@@ -45,8 +45,8 @@ namespace PassVault
         }
 
         private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
+        {            
+            this.Close();            
         }
 
         private void Client_Name_txt_KeyUp(object sender, KeyEventArgs e)

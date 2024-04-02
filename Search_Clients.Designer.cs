@@ -88,7 +88,7 @@
             // 
             Client_Name_lbl.AutoSize = true;
             Client_Name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            Client_Name_lbl.Location = new System.Drawing.Point(83, 36);
+            Client_Name_lbl.Location = new System.Drawing.Point(16, 36);
             Client_Name_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             Client_Name_lbl.Name = "Client_Name_lbl";
             Client_Name_lbl.Size = new System.Drawing.Size(95, 20);
@@ -99,7 +99,7 @@
             // Client_Name_txt
             // 
             Client_Name_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            Client_Name_txt.Location = new System.Drawing.Point(83, 59);
+            Client_Name_txt.Location = new System.Drawing.Point(16, 59);
             Client_Name_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Client_Name_txt.Name = "Client_Name_txt";
             Client_Name_txt.Size = new System.Drawing.Size(225, 26);
@@ -132,7 +132,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            label2.Location = new System.Drawing.Point(349, 36);
+            label2.Location = new System.Drawing.Point(271, 36);
             label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(66, 20);
@@ -143,7 +143,7 @@
             // cmbClientID
             // 
             cmbClientID.FormattingEnabled = true;
-            cmbClientID.Location = new System.Drawing.Point(326, 63);
+            cmbClientID.Location = new System.Drawing.Point(248, 63);
             cmbClientID.Name = "cmbClientID";
             cmbClientID.Size = new System.Drawing.Size(121, 23);
             cmbClientID.TabIndex = 49;
@@ -152,7 +152,7 @@
             // cmbOIB
             // 
             cmbOIB.FormattingEnabled = true;
-            cmbOIB.Location = new System.Drawing.Point(477, 63);
+            cmbOIB.Location = new System.Drawing.Point(375, 63);
             cmbOIB.Name = "cmbOIB";
             cmbOIB.Size = new System.Drawing.Size(121, 23);
             cmbOIB.TabIndex = 51;
@@ -162,7 +162,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            label3.Location = new System.Drawing.Point(501, 36);
+            label3.Location = new System.Drawing.Point(399, 36);
             label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(37, 20);
@@ -173,7 +173,7 @@
             // cmbCity
             // 
             cmbCity.FormattingEnabled = true;
-            cmbCity.Location = new System.Drawing.Point(610, 62);
+            cmbCity.Location = new System.Drawing.Point(502, 63);
             cmbCity.Name = "cmbCity";
             cmbCity.Size = new System.Drawing.Size(121, 23);
             cmbCity.TabIndex = 53;
@@ -183,7 +183,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            label4.Location = new System.Drawing.Point(634, 35);
+            label4.Location = new System.Drawing.Point(526, 36);
             label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(35, 20);
