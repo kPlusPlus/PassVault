@@ -29,24 +29,14 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            button9 = new System.Windows.Forms.Button();
-            button10 = new System.Windows.Forms.Button();
-            button5 = new System.Windows.Forms.Button();
-            button6 = new System.Windows.Forms.Button();
-            button7 = new System.Windows.Forms.Button();
-            button8 = new System.Windows.Forms.Button();
-            button3 = new System.Windows.Forms.Button();
-            button4 = new System.Windows.Forms.Button();
-            button2 = new System.Windows.Forms.Button();
-            button1 = new System.Windows.Forms.Button();
             Comment_lbl = new System.Windows.Forms.Label();
-            Email_txt = new System.Windows.Forms.TextBox();
+            Comment_txt = new System.Windows.Forms.TextBox();
             Expire_lbl = new System.Windows.Forms.Label();
-            Contact_txt = new System.Windows.Forms.TextBox();
+            Expire_txt = new System.Windows.Forms.TextBox();
             CertPass_lbl = new System.Windows.Forms.Label();
             Pfx_Pass_lbl = new System.Windows.Forms.Label();
-            StreetNo_txt = new System.Windows.Forms.TextBox();
-            Street_txt = new System.Windows.Forms.TextBox();
+            PfxPass_txt = new System.Windows.Forms.TextBox();
+            CertPass_txt = new System.Windows.Forms.TextBox();
             Address_lbl = new System.Windows.Forms.Label();
             City_txt = new System.Windows.Forms.TextBox();
             Client_lbl = new System.Windows.Forms.Label();
@@ -58,111 +48,23 @@
             ID_lbl = new System.Windows.Forms.Label();
             ID_txt = new System.Windows.Forms.TextBox();
             bindingSource1 = new System.Windows.Forms.BindingSource(components);
+            panel2 = new System.Windows.Forms.Panel();
+            button1 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
+            button9 = new System.Windows.Forms.Button();
+            button4 = new System.Windows.Forms.Button();
+            button10 = new System.Windows.Forms.Button();
+            button3 = new System.Windows.Forms.Button();
+            button5 = new System.Windows.Forms.Button();
+            button8 = new System.Windows.Forms.Button();
+            button6 = new System.Windows.Forms.Button();
+            button7 = new System.Windows.Forms.Button();
+            dgvCertificates = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvCertificates).BeginInit();
             SuspendLayout();
-            // 
-            // button9
-            // 
-            button9.Location = new System.Drawing.Point(484, 445);
-            button9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(49, 46);
-            button9.TabIndex = 17;
-            button9.Text = "Exit";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click;
-            // 
-            // button10
-            // 
-            button10.Location = new System.Drawing.Point(432, 445);
-            button10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button10.Name = "button10";
-            button10.Size = new System.Drawing.Size(49, 46);
-            button10.TabIndex = 16;
-            button10.Text = "Q";
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.Location = new System.Drawing.Point(379, 445);
-            button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button5.Name = "button5";
-            button5.Size = new System.Drawing.Size(49, 46);
-            button5.TabIndex = 15;
-            button5.Text = ">]";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Location = new System.Drawing.Point(327, 445);
-            button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button6.Name = "button6";
-            button6.Size = new System.Drawing.Size(49, 46);
-            button6.TabIndex = 14;
-            button6.Text = ">";
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.Location = new System.Drawing.Point(274, 445);
-            button7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(49, 46);
-            button7.TabIndex = 13;
-            button7.Text = "<";
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.Location = new System.Drawing.Point(222, 445);
-            button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(49, 46);
-            button8.TabIndex = 12;
-            button8.Text = "[<";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new System.Drawing.Point(169, 445);
-            button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(49, 46);
-            button3.TabIndex = 11;
-            button3.Text = "Undo";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
-            // button4
-            // 
-            button4.Location = new System.Drawing.Point(117, 445);
-            button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(49, 46);
-            button4.TabIndex = 10;
-            button4.Text = "New";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new System.Drawing.Point(64, 445);
-            button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(49, 46);
-            button2.TabIndex = 9;
-            button2.Text = "Save";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Location = new System.Drawing.Point(12, 445);
-            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(49, 46);
-            button1.TabIndex = 8;
-            button1.Text = "Edit";
-            button1.UseVisualStyleBackColor = true;
             // 
             // Comment_lbl
             // 
@@ -176,15 +78,15 @@
             Comment_lbl.Text = "Comment";
             Comment_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Email_txt
+            // Comment_txt
             // 
-            Email_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            Email_txt.Location = new System.Drawing.Point(120, 348);
-            Email_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Email_txt.Multiline = true;
-            Email_txt.Name = "Email_txt";
-            Email_txt.Size = new System.Drawing.Size(377, 73);
-            Email_txt.TabIndex = 7;
+            Comment_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            Comment_txt.Location = new System.Drawing.Point(120, 348);
+            Comment_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Comment_txt.Multiline = true;
+            Comment_txt.Name = "Comment_txt";
+            Comment_txt.Size = new System.Drawing.Size(377, 73);
+            Comment_txt.TabIndex = 7;
             // 
             // Expire_lbl
             // 
@@ -198,14 +100,14 @@
             Expire_lbl.Text = "Expire";
             Expire_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Contact_txt
+            // Expire_txt
             // 
-            Contact_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            Contact_txt.Location = new System.Drawing.Point(120, 312);
-            Contact_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Contact_txt.Name = "Contact_txt";
-            Contact_txt.Size = new System.Drawing.Size(377, 26);
-            Contact_txt.TabIndex = 6;
+            Expire_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            Expire_txt.Location = new System.Drawing.Point(120, 312);
+            Expire_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Expire_txt.Name = "Expire_txt";
+            Expire_txt.Size = new System.Drawing.Size(377, 26);
+            Expire_txt.TabIndex = 6;
             // 
             // CertPass_lbl
             // 
@@ -231,23 +133,23 @@
             Pfx_Pass_lbl.Text = "Pfx_Pass";
             Pfx_Pass_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // StreetNo_txt
+            // PfxPass_txt
             // 
-            StreetNo_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            StreetNo_txt.Location = new System.Drawing.Point(120, 275);
-            StreetNo_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            StreetNo_txt.Name = "StreetNo_txt";
-            StreetNo_txt.Size = new System.Drawing.Size(377, 26);
-            StreetNo_txt.TabIndex = 5;
+            PfxPass_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            PfxPass_txt.Location = new System.Drawing.Point(120, 275);
+            PfxPass_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PfxPass_txt.Name = "PfxPass_txt";
+            PfxPass_txt.Size = new System.Drawing.Size(377, 26);
+            PfxPass_txt.TabIndex = 5;
             // 
-            // Street_txt
+            // CertPass_txt
             // 
-            Street_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            Street_txt.Location = new System.Drawing.Point(120, 238);
-            Street_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Street_txt.Name = "Street_txt";
-            Street_txt.Size = new System.Drawing.Size(377, 26);
-            Street_txt.TabIndex = 4;
+            CertPass_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            CertPass_txt.Location = new System.Drawing.Point(120, 238);
+            CertPass_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            CertPass_txt.Name = "CertPass_txt";
+            CertPass_txt.Size = new System.Drawing.Size(377, 26);
+            CertPass_txt.TabIndex = 4;
             // 
             // Address_lbl
             // 
@@ -316,11 +218,11 @@
             // Heading_lbl
             // 
             Heading_lbl.AutoSize = true;
-            Heading_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            Heading_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             Heading_lbl.Location = new System.Drawing.Point(212, 30);
             Heading_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             Heading_lbl.Name = "Heading_lbl";
-            Heading_lbl.Size = new System.Drawing.Size(162, 20);
+            Heading_lbl.Size = new System.Drawing.Size(210, 24);
             Heading_lbl.TabIndex = 64;
             Heading_lbl.Text = "Add / Edit Certificates";
             // 
@@ -355,29 +257,159 @@
             ID_txt.Size = new System.Drawing.Size(67, 26);
             ID_txt.TabIndex = 0;
             // 
+            // panel2
+            // 
+            panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            panel2.Controls.Add(button1);
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(button9);
+            panel2.Controls.Add(button4);
+            panel2.Controls.Add(button10);
+            panel2.Controls.Add(button3);
+            panel2.Controls.Add(button5);
+            panel2.Controls.Add(button8);
+            panel2.Controls.Add(button6);
+            panel2.Controls.Add(button7);
+            panel2.Location = new System.Drawing.Point(12, 444);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(539, 63);
+            panel2.TabIndex = 77;
+            // 
+            // button1
+            // 
+            button1.Location = new System.Drawing.Point(10, 9);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(49, 46);
+            button1.TabIndex = 12;
+            button1.Text = "Edit";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new System.Drawing.Point(62, 9);
+            button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(49, 46);
+            button2.TabIndex = 13;
+            button2.Text = "Save";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button9
+            // 
+            button9.Location = new System.Drawing.Point(482, 9);
+            button9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button9.Name = "button9";
+            button9.Size = new System.Drawing.Size(49, 46);
+            button9.TabIndex = 21;
+            button9.Text = "Exit";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click_1;
+            // 
+            // button4
+            // 
+            button4.Location = new System.Drawing.Point(115, 9);
+            button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button4.Name = "button4";
+            button4.Size = new System.Drawing.Size(49, 46);
+            button4.TabIndex = 14;
+            button4.Text = "New";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button10
+            // 
+            button10.Location = new System.Drawing.Point(430, 9);
+            button10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button10.Name = "button10";
+            button10.Size = new System.Drawing.Size(49, 46);
+            button10.TabIndex = 20;
+            button10.Text = "Q";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new System.Drawing.Point(167, 9);
+            button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button3.Name = "button3";
+            button3.Size = new System.Drawing.Size(49, 46);
+            button3.TabIndex = 15;
+            button3.Text = "Undo";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click_1;
+            // 
+            // button5
+            // 
+            button5.Location = new System.Drawing.Point(377, 9);
+            button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button5.Name = "button5";
+            button5.Size = new System.Drawing.Size(49, 46);
+            button5.TabIndex = 19;
+            button5.Text = ">]";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button8
+            // 
+            button8.Location = new System.Drawing.Point(220, 9);
+            button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button8.Name = "button8";
+            button8.Size = new System.Drawing.Size(49, 46);
+            button8.TabIndex = 16;
+            button8.Text = "[<";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new System.Drawing.Point(325, 9);
+            button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button6.Name = "button6";
+            button6.Size = new System.Drawing.Size(49, 46);
+            button6.TabIndex = 18;
+            button6.Text = ">";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // button7
+            // 
+            button7.Location = new System.Drawing.Point(272, 9);
+            button7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button7.Name = "button7";
+            button7.Size = new System.Drawing.Size(49, 46);
+            button7.TabIndex = 17;
+            button7.Text = "<";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // dgvCertificates
+            // 
+            dgvCertificates.AllowUserToOrderColumns = true;
+            dgvCertificates.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dgvCertificates.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvCertificates.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dgvCertificates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCertificates.Location = new System.Drawing.Point(504, 12);
+            dgvCertificates.MultiSelect = false;
+            dgvCertificates.Name = "dgvCertificates";
+            dgvCertificates.Size = new System.Drawing.Size(507, 495);
+            dgvCertificates.TabIndex = 78;
+            // 
             // Add_Edit_Certificates_frm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(558, 519);
-            Controls.Add(button9);
-            Controls.Add(button10);
-            Controls.Add(button5);
-            Controls.Add(button6);
-            Controls.Add(button7);
-            Controls.Add(button8);
-            Controls.Add(button3);
-            Controls.Add(button4);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new System.Drawing.Size(1023, 519);
+            Controls.Add(panel2);
             Controls.Add(Comment_lbl);
-            Controls.Add(Email_txt);
+            Controls.Add(Comment_txt);
             Controls.Add(Expire_lbl);
-            Controls.Add(Contact_txt);
+            Controls.Add(Expire_txt);
             Controls.Add(CertPass_lbl);
             Controls.Add(Pfx_Pass_lbl);
-            Controls.Add(StreetNo_txt);
-            Controls.Add(Street_txt);
+            Controls.Add(PfxPass_txt);
+            Controls.Add(CertPass_txt);
             Controls.Add(Address_lbl);
             Controls.Add(City_txt);
             Controls.Add(Client_lbl);
@@ -388,35 +420,27 @@
             Controls.Add(pictureBox1);
             Controls.Add(ID_lbl);
             Controls.Add(ID_txt);
+            Controls.Add(dgvCertificates);
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "Add_Edit_Certificates_frm";
             Text = "Akdamar Pass Vault";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvCertificates).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label Comment_lbl;
-        private System.Windows.Forms.TextBox Email_txt;
+        private System.Windows.Forms.TextBox Comment_txt;
         private System.Windows.Forms.Label Expire_lbl;
-        private System.Windows.Forms.TextBox Contact_txt;
+        private System.Windows.Forms.TextBox Expire_txt;
         private System.Windows.Forms.Label CertPass_lbl;
         private System.Windows.Forms.Label Pfx_Pass_lbl;
-        private System.Windows.Forms.TextBox StreetNo_txt;
-        private System.Windows.Forms.TextBox Street_txt;
+        private System.Windows.Forms.TextBox PfxPass_txt;
+        private System.Windows.Forms.TextBox CertPass_txt;
         private System.Windows.Forms.Label Address_lbl;
         private System.Windows.Forms.TextBox City_txt;
         private System.Windows.Forms.Label Client_lbl;
@@ -428,5 +452,17 @@
         private System.Windows.Forms.Label ID_lbl;
         private System.Windows.Forms.TextBox ID_txt;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        public System.Windows.Forms.DataGridView dgvCertificates;
     }
 }

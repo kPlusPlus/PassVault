@@ -461,6 +461,7 @@
             button1.TabIndex = 12;
             button1.Text = "Edit";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // panel2
             // 

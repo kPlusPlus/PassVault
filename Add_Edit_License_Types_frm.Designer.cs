@@ -51,11 +51,11 @@
             button8 = new System.Windows.Forms.Button();
             button6 = new System.Windows.Forms.Button();
             button7 = new System.Windows.Forms.Button();
-            dgvClients = new System.Windows.Forms.DataGridView();
+            dgvLicenceType = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvClients).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvLicenceType).BeginInit();
             SuspendLayout();
             // 
             // Heading_lbl
@@ -187,6 +187,7 @@
             button1.TabIndex = 12;
             button1.Text = "Edit";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -197,6 +198,7 @@
             button2.TabIndex = 13;
             button2.Text = "Save";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button9
             // 
@@ -218,6 +220,7 @@
             button4.TabIndex = 14;
             button4.Text = "New";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button10
             // 
@@ -238,6 +241,7 @@
             button3.TabIndex = 15;
             button3.Text = "Undo";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button5
             // 
@@ -248,6 +252,7 @@
             button5.TabIndex = 19;
             button5.Text = ">]";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button8
             // 
@@ -258,6 +263,7 @@
             button8.TabIndex = 16;
             button8.Text = "[<";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button6
             // 
@@ -268,6 +274,7 @@
             button6.TabIndex = 18;
             button6.Text = ">";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -278,26 +285,28 @@
             button7.TabIndex = 17;
             button7.Text = "<";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
-            // dgvClients
+            // dgvLicenceType
             // 
-            dgvClients.AllowUserToOrderColumns = true;
-            dgvClients.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            dgvClients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            dgvClients.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClients.Location = new System.Drawing.Point(703, 12);
-            dgvClients.MultiSelect = false;
-            dgvClients.Name = "dgvClients";
-            dgvClients.Size = new System.Drawing.Size(400, 401);
-            dgvClients.TabIndex = 46;
+            dgvLicenceType.AllowUserToOrderColumns = true;
+            dgvLicenceType.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dgvLicenceType.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvLicenceType.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dgvLicenceType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLicenceType.Location = new System.Drawing.Point(703, 12);
+            dgvLicenceType.MultiSelect = false;
+            dgvLicenceType.Name = "dgvLicenceType";
+            dgvLicenceType.Size = new System.Drawing.Size(0, 401);
+            dgvLicenceType.TabIndex = 46;
+            dgvLicenceType.Visible = false;
             // 
             // Add_Edit_License_Types_frm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1115, 425);
-            Controls.Add(dgvClients);
+            ClientSize = new System.Drawing.Size(712, 425);
+            Controls.Add(dgvLicenceType);
             Controls.Add(panel2);
             Controls.Add(Comment_txt);
             Controls.Add(Comment_lbl);
@@ -315,7 +324,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvClients).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvLicenceType).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -344,6 +353,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        public System.Windows.Forms.DataGridView dgvClients;
+        public System.Windows.Forms.DataGridView dgvLicenceType;
     }
 }
