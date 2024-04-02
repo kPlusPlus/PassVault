@@ -349,7 +349,7 @@
             dgvClients.Location = new System.Drawing.Point(565, 68);
             dgvClients.MultiSelect = false;
             dgvClients.Name = "dgvClients";
-            dgvClients.Size = new System.Drawing.Size(229, 434);
+            dgvClients.Size = new System.Drawing.Size(202, 434);
             dgvClients.TabIndex = 42;
             dgvClients.Visible = false;
             // 

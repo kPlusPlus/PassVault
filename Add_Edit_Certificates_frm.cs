@@ -20,7 +20,10 @@ namespace PassVault
         public Add_Edit_Certificates_frm()
         {
             InitializeComponent();
+
+            FillCombo();
             FillDataGridView();
+
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -50,12 +53,13 @@ namespace PassVault
             common.adapter.DeleteCommand = deleteCommand.GetDeleteCommand();
 
             ID_txt.DataBindings.Add("Text", bindingSource1, "ID");
-            Created_txt.DataBindings.Add("Text", bindingSource1, "Date");
-            OIB_txt.DataBindings.Add("Text", bindingSource1, "Client");
+            dtpCreated.DataBindings.Add("Text", bindingSource1, "Date");
+            //OIB_txt.DataBindings.Add("Text", bindingSource1, "Client");
+            CliendID_txt.DataBindings.Add("Text", bindingSource1, "Client");
             City_txt.DataBindings.Add("Text", bindingSource1, "Address");
             CertPass_txt.DataBindings.Add("Text", bindingSource1, "CertPass");
             PfxPass_txt.DataBindings.Add("Text", bindingSource1, "PfxPass");
-            Expire_txt.DataBindings.Add("Text", bindingSource1, "DateExp");
+            dtpExpire.DataBindings.Add("Text", bindingSource1, "DateExp");
             Comment_txt.DataBindings.Add("Text", bindingSource1, "Comment");
 
         }
@@ -143,6 +147,34 @@ namespace PassVault
                 int lastIndex = dgvCertificates.Rows.Count - 2;
                 dgvCertificates.Rows[lastIndex].Selected = true;
                 dgvCertificates.CurrentCell = dgvCertificates.Rows[lastIndex].Cells[0];
+            }
+        }
+
+        private void FillCombo()
+        {
+            DataSet dataSet = new DataSet();
+            string Query = "SELECT * FROM dbo.Clients_tbl ORDER BY Name;";
+            dataSet = common.GetDataSet(Query);
+            DataTable dt = dataSet.Tables[0];
+
+            comboBox1.DisplayMember = "Name";
+            comboBox1.ValueMember = "ClientID";
+            comboBox1.DataSource = dt;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex > -1)
+            {
+                CliendID_txt.Text = comboBox1.SelectedValue.ToString();
+            }
+        }
+
+        private void bindingSource1_PositionChanged(object sender, EventArgs e)
+        {
+            if (CliendID_txt.Text != string.Empty)
+            {
+                comboBox1.SelectedValue = CliendID_txt.Text;
             }
         }
     }

@@ -65,10 +65,6 @@ namespace PassVault
             comboBox1.DisplayMember = "Name";
             comboBox1.ValueMember = "ClientID";
             comboBox1.DataSource = dt;
-
-            //comboBox1.DataBindings.Add("Text", bindingSource1, "ClientID");
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -167,14 +163,6 @@ namespace PassVault
 
         private void bindingSource1_PositionChanged(object sender, EventArgs e)
         {
-            /*
-            int index = comboBox1.FindStringExact(textBox2.Text);
-            if (index != -1)
-            {
-                comboBox1.SelectedIndex = index;
-            }
-            */
-
             if (textBox2.Text != string.Empty)
             {
                 comboBox1.SelectedValue = textBox2.Text;

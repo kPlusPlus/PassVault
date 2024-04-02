@@ -45,5 +45,12 @@ namespace PassVault
             var myForm = new Add_Edit_Certificates_frm();
             myForm.ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Search_frm search = new Search_frm();
+            search.ShowDialog();
+
+        }
     }
 }

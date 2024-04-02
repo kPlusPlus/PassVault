@@ -28,118 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            button5 = new System.Windows.Forms.Button();
+            button4 = new System.Windows.Forms.Button();
+            button3 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
+            button1 = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(12, 252);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(57, 30);
-            this.button5.TabIndex = 26;
-            this.button5.Text = "Exit";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 238);
+            button5.Location = new System.Drawing.Point(14, 291);
+            button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button5.Name = "button5";
+            button5.Size = new System.Drawing.Size(66, 35);
+            button5.TabIndex = 26;
+            button5.Text = "Exit";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(12, 216);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(220, 30);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "Search Certificates";
-            this.button4.UseVisualStyleBackColor = true;
+            button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 238);
+            button4.Location = new System.Drawing.Point(14, 249);
+            button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button4.Name = "button4";
+            button4.Size = new System.Drawing.Size(257, 35);
+            button4.TabIndex = 24;
+            button4.Text = "Search Certificates";
+            button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(12, 180);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 30);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Search LIcense Types";
-            this.button3.UseVisualStyleBackColor = true;
+            button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 238);
+            button3.Location = new System.Drawing.Point(14, 208);
+            button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button3.Name = "button3";
+            button3.Size = new System.Drawing.Size(257, 35);
+            button3.TabIndex = 22;
+            button3.Text = "Search LIcense Types";
+            button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(12, 144);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(220, 30);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Search Pass Vault Records";
-            this.button2.UseVisualStyleBackColor = true;
+            button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 238);
+            button2.Location = new System.Drawing.Point(14, 166);
+            button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(257, 35);
+            button2.TabIndex = 20;
+            button2.Text = "Search Pass Vault Records";
+            button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(12, 108);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 30);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Search Clients";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 238);
+            button1.Location = new System.Drawing.Point(14, 125);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(257, 35);
+            button1.TabIndex = 17;
+            button1.Text = "Search Clients";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(118, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 20);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Pass Vault";
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            label1.Location = new System.Drawing.Point(138, 25);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(107, 24);
+            label1.TabIndex = 16;
+            label1.Text = "Pass Vault";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PassVault.Properties.Resources.AkdamarLogo2023_100;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 34);
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.AkdamarLogo2023_100;
+            pictureBox1.Location = new System.Drawing.Point(14, 14);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(117, 39);
+            pictureBox1.TabIndex = 18;
+            pictureBox1.TabStop = false;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(55, 74);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 20);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Search Records";
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            label6.Location = new System.Drawing.Point(64, 85);
+            label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(124, 20);
+            label6.TabIndex = 27;
+            label6.Text = "Search Records";
             // 
             // Search_frm
             // 
-            this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(249, 301);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Name = "Search_frm";
-            this.Text = "Akdamar Pass Vault";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AllowDrop = true;
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(290, 347);
+            Controls.Add(label6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(pictureBox1);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Search_frm";
+            Text = "Akdamar Pass Vault";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

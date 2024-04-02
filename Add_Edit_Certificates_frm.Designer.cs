@@ -32,7 +32,6 @@
             Comment_lbl = new System.Windows.Forms.Label();
             Comment_txt = new System.Windows.Forms.TextBox();
             Expire_lbl = new System.Windows.Forms.Label();
-            Expire_txt = new System.Windows.Forms.TextBox();
             CertPass_lbl = new System.Windows.Forms.Label();
             Pfx_Pass_lbl = new System.Windows.Forms.Label();
             PfxPass_txt = new System.Windows.Forms.TextBox();
@@ -40,9 +39,7 @@
             Address_lbl = new System.Windows.Forms.Label();
             City_txt = new System.Windows.Forms.TextBox();
             Client_lbl = new System.Windows.Forms.Label();
-            OIB_txt = new System.Windows.Forms.TextBox();
             Created_lbl = new System.Windows.Forms.Label();
-            Created_txt = new System.Windows.Forms.TextBox();
             Heading_lbl = new System.Windows.Forms.Label();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             ID_lbl = new System.Windows.Forms.Label();
@@ -60,6 +57,10 @@
             button6 = new System.Windows.Forms.Button();
             button7 = new System.Windows.Forms.Button();
             dgvCertificates = new System.Windows.Forms.DataGridView();
+            dtpCreated = new System.Windows.Forms.DateTimePicker();
+            dtpExpire = new System.Windows.Forms.DateTimePicker();
+            comboBox1 = new System.Windows.Forms.ComboBox();
+            CliendID_txt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             panel2.SuspendLayout();
@@ -99,15 +100,6 @@
             Expire_lbl.TabIndex = 75;
             Expire_lbl.Text = "Expire";
             Expire_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Expire_txt
-            // 
-            Expire_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            Expire_txt.Location = new System.Drawing.Point(120, 312);
-            Expire_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Expire_txt.Name = "Expire_txt";
-            Expire_txt.Size = new System.Drawing.Size(377, 26);
-            Expire_txt.TabIndex = 6;
             // 
             // CertPass_lbl
             // 
@@ -184,15 +176,6 @@
             Client_lbl.Text = "Client";
             Client_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // OIB_txt
-            // 
-            OIB_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            OIB_txt.Location = new System.Drawing.Point(120, 164);
-            OIB_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            OIB_txt.Name = "OIB_txt";
-            OIB_txt.Size = new System.Drawing.Size(377, 26);
-            OIB_txt.TabIndex = 2;
-            // 
             // Created_lbl
             // 
             Created_lbl.AutoSize = true;
@@ -204,16 +187,6 @@
             Created_lbl.TabIndex = 68;
             Created_lbl.Text = "Created";
             Created_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Created_txt
-            // 
-            Created_txt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            Created_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            Created_txt.Location = new System.Drawing.Point(120, 127);
-            Created_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Created_txt.Name = "Created_txt";
-            Created_txt.Size = new System.Drawing.Size(138, 26);
-            Created_txt.TabIndex = 1;
             // 
             // Heading_lbl
             // 
@@ -256,6 +229,10 @@
             ID_txt.Name = "ID_txt";
             ID_txt.Size = new System.Drawing.Size(67, 26);
             ID_txt.TabIndex = 0;
+            // 
+            // bindingSource1
+            // 
+            bindingSource1.PositionChanged += bindingSource1_PositionChanged;
             // 
             // panel2
             // 
@@ -393,19 +370,57 @@
             dgvCertificates.Location = new System.Drawing.Point(504, 12);
             dgvCertificates.MultiSelect = false;
             dgvCertificates.Name = "dgvCertificates";
-            dgvCertificates.Size = new System.Drawing.Size(507, 495);
+            dgvCertificates.Size = new System.Drawing.Size(49, 495);
             dgvCertificates.TabIndex = 78;
+            dgvCertificates.Visible = false;
+            // 
+            // dtpCreated
+            // 
+            dtpCreated.Location = new System.Drawing.Point(120, 125);
+            dtpCreated.Name = "dtpCreated";
+            dtpCreated.Size = new System.Drawing.Size(200, 23);
+            dtpCreated.TabIndex = 79;
+            // 
+            // dtpExpire
+            // 
+            dtpExpire.Location = new System.Drawing.Point(120, 312);
+            dtpExpire.Name = "dtpExpire";
+            dtpExpire.Size = new System.Drawing.Size(200, 23);
+            dtpExpire.TabIndex = 80;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new System.Drawing.Point(120, 160);
+            comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new System.Drawing.Size(270, 28);
+            comboBox1.TabIndex = 81;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // CliendID_txt
+            // 
+            CliendID_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
+            CliendID_txt.Location = new System.Drawing.Point(403, 160);
+            CliendID_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            CliendID_txt.Name = "CliendID_txt";
+            CliendID_txt.Size = new System.Drawing.Size(88, 26);
+            CliendID_txt.TabIndex = 82;
             // 
             // Add_Edit_Certificates_frm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1023, 519);
+            ClientSize = new System.Drawing.Size(565, 519);
+            Controls.Add(CliendID_txt);
+            Controls.Add(comboBox1);
+            Controls.Add(dtpExpire);
+            Controls.Add(dtpCreated);
             Controls.Add(panel2);
             Controls.Add(Comment_lbl);
             Controls.Add(Comment_txt);
             Controls.Add(Expire_lbl);
-            Controls.Add(Expire_txt);
             Controls.Add(CertPass_lbl);
             Controls.Add(Pfx_Pass_lbl);
             Controls.Add(PfxPass_txt);
@@ -413,9 +428,7 @@
             Controls.Add(Address_lbl);
             Controls.Add(City_txt);
             Controls.Add(Client_lbl);
-            Controls.Add(OIB_txt);
             Controls.Add(Created_lbl);
-            Controls.Add(Created_txt);
             Controls.Add(Heading_lbl);
             Controls.Add(pictureBox1);
             Controls.Add(ID_lbl);
@@ -436,7 +449,6 @@
         private System.Windows.Forms.Label Comment_lbl;
         private System.Windows.Forms.TextBox Comment_txt;
         private System.Windows.Forms.Label Expire_lbl;
-        private System.Windows.Forms.TextBox Expire_txt;
         private System.Windows.Forms.Label CertPass_lbl;
         private System.Windows.Forms.Label Pfx_Pass_lbl;
         private System.Windows.Forms.TextBox PfxPass_txt;
@@ -444,9 +456,7 @@
         private System.Windows.Forms.Label Address_lbl;
         private System.Windows.Forms.TextBox City_txt;
         private System.Windows.Forms.Label Client_lbl;
-        private System.Windows.Forms.TextBox OIB_txt;
         private System.Windows.Forms.Label Created_lbl;
-        private System.Windows.Forms.TextBox Created_txt;
         private System.Windows.Forms.Label Heading_lbl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label ID_lbl;
@@ -464,5 +474,9 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         public System.Windows.Forms.DataGridView dgvCertificates;
+        private System.Windows.Forms.DateTimePicker dtpCreated;
+        private System.Windows.Forms.DateTimePicker dtpExpire;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox CliendID_txt;
     }
 }
