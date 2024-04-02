@@ -156,6 +156,7 @@
             cmbOIB.Name = "cmbOIB";
             cmbOIB.Size = new System.Drawing.Size(121, 23);
             cmbOIB.TabIndex = 51;
+            cmbOIB.SelectedIndexChanged += cmbOIB_SelectedIndexChanged;
             // 
             // label3
             // 
@@ -176,6 +177,7 @@
             cmbCity.Name = "cmbCity";
             cmbCity.Size = new System.Drawing.Size(121, 23);
             cmbCity.TabIndex = 53;
+            cmbCity.SelectedIndexChanged += cmbCity_SelectedIndexChanged;
             // 
             // label4
             // 

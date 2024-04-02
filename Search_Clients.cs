@@ -57,7 +57,7 @@ namespace PassVault
             }
         }
 
-        private void SearchClient(String SearchByOib = null)
+        private void SearchClient(String SearchByClientID = null, String SearchByOIB = null, String SearchByCity = null)
         {
             bool bWhere = false;
             string sWhere = string.Empty;
@@ -68,11 +68,22 @@ namespace PassVault
                 bWhere = true;
                 sWhere = "Name LIKE '%" + Client_Name_txt.Text + "%'";
             }
-            else if (SearchByOib != string.Empty)
+            else if (SearchByClientID != null)
             {
                 bWhere = true;
-                sWhere = "ClientID = " + SearchByOib;
+                sWhere = "ClientID = " + SearchByClientID;
             }
+            else if (SearchByOIB != null)
+            {
+                bWhere = true;
+                sWhere = "OIB = " + SearchByOIB;
+            }
+            else if (SearchByCity != null)
+            {
+                bWhere = true;
+                sWhere = "Address_City = '" + SearchByCity + "'";
+            }
+
 
             if (bWhere)
             {
@@ -89,6 +100,7 @@ namespace PassVault
             string Query = "SELECT * FROM dbo.Clients_tbl;";
             common.ds = common.GetDataSet(Query);
             dgvClients.DataSource = common.ds.Tables[0];
+            FillCombo();
         }
 
         private void FillCombo()
@@ -124,13 +136,29 @@ SELECT ' ODABERI' as Pikula
             cmbCity.ValueMember = "Pikula";
             cmbCity.DataSource = dtB;
 
-        }        
+        }
 
         private void cmbClientID_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbClientID.SelectedIndex > 0)
             {
-                SearchClient(cmbClientID.Text);
+                SearchClient(cmbClientID.Text,null,null);
+            }
+        }
+
+        private void cmbOIB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbOIB.SelectedIndex > 0)
+            {
+                SearchClient(null, cmbOIB.Text, null);
+            }
+        }
+
+        private void cmbCity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbCity.SelectedIndex > 0)
+            {
+                SearchClient(null,null,cmbCity.Text);
             }
         }
     }
