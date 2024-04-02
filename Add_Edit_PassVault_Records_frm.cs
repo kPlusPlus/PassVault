@@ -18,8 +18,9 @@ namespace PassVault
         public Add_Edit_PassVault_Records_frm()
         {
             InitializeComponent();
-            FillDataGridView();
+
             FillCombo();
+            FillDataGridView();
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace PassVault
 
             textBox1.DataBindings.Add("Text", bindingSource1, "ID");
             textBox2.DataBindings.Add("Text", bindingSource1, "ClientID");
+            //textBox2.DataBindings.Add("Text", comboBox1.DataSource, "ClientID");
             textBox14.DataBindings.Add("Text", bindingSource1, "AL");
             textBox6.DataBindings.Add("Text", bindingSource1, "Description");
             textBox10.DataBindings.Add("Text", bindingSource1, "Username");
@@ -60,16 +62,13 @@ namespace PassVault
             dataSet = common.GetDataSet(Query);
             DataTable dt = dataSet.Tables[0];
 
-            comboBox1.DisplayMember = "DisplayName";
+            comboBox1.DisplayMember = "Name";
             comboBox1.ValueMember = "ClientID";
-            comboBox1.DataSource = dataSet;
+            comboBox1.DataSource = dt;
 
-            /*
-            foreach (DataRow row in dt.Rows)
-            {
-                comboBox1.Items.Add(row["Name"]);
-            }
-            */
+            //comboBox1.DataBindings.Add("Text", bindingSource1, "ClientID");
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -146,6 +145,46 @@ namespace PassVault
                 dgvPass.Rows[lastIndex].Selected = true;
                 dgvPass.CurrentCell = dgvPass.Rows[lastIndex].Cells[0];
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex > -1)
+            {
+                textBox2.Text = comboBox1.SelectedValue.ToString();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            bindingSource1.CancelEdit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingSource1_PositionChanged(object sender, EventArgs e)
+        {
+            /*
+            int index = comboBox1.FindStringExact(textBox2.Text);
+            if (index != -1)
+            {
+                comboBox1.SelectedIndex = index;
+            }
+            */
+
+            if (textBox2.Text != string.Empty)
+            {
+                comboBox1.SelectedValue = textBox2.Text;
+            }
+
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

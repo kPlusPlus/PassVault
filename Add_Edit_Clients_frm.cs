@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PassVault
 {
@@ -137,6 +138,11 @@ namespace PassVault
                 dgvClients.Rows[lastIndex].Selected = true;
                 dgvClients.CurrentCell = dgvClients.Rows[lastIndex].Cells[0];
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            bindingSource1.CancelEdit();
         }
     }
 }

@@ -225,6 +225,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new System.Drawing.Size(377, 28);
             comboBox1.TabIndex = 0;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // Username_lbl
             // 
@@ -285,6 +286,10 @@
             dgvPass.TabIndex = 96;
             dgvPass.Visible = false;
             // 
+            // bindingSource1
+            // 
+            bindingSource1.PositionChanged += bindingSource1_PositionChanged;
+            // 
             // panel2
             // 
             panel2.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -312,6 +317,7 @@
             button1.TabIndex = 12;
             button1.Text = "Edit";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -333,6 +339,7 @@
             button9.TabIndex = 21;
             button9.Text = "Exit";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click_1;
             // 
             // button4
             // 
@@ -364,6 +371,7 @@
             button3.TabIndex = 15;
             button3.Text = "Undo";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button5
             // 

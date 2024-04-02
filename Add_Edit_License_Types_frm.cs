@@ -17,7 +17,7 @@ namespace PassVault
             InitializeComponent();
         }
 
-        private void Exit_botun_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)
         {
             this.Close();
         }
