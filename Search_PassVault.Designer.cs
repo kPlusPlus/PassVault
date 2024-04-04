@@ -84,6 +84,7 @@
             dgvPassVault.Name = "dgvPassVault";
             dgvPassVault.Size = new System.Drawing.Size(776, 334);
             dgvPassVault.TabIndex = 50;
+            dgvPassVault.DoubleClick += dgvPassVault_DoubleClick;
             // 
             // pictureBox1
             // 

@@ -185,5 +185,30 @@ namespace PassVault
                 cmbClientID.SelectedValue = ClientID_txt.Text;
             }
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Search_License search_License = new Search_License();
+            if (search_License.ShowDialog() == DialogResult.OK)
+            {
+                int returnValue = search_License.ReturnValue;
+                SelectRowByValue("ID", returnValue.ToString());
+            }
+        }
+
+        private void SelectRowByValue(string columnName, string value)
+        {
+            foreach (DataGridViewRow row in dgvLicence.Rows)
+            {
+                if (row.Cells[columnName].Value != null && row.Cells[columnName].Value.ToString() == value)
+                {
+                    dgvLicence.ClearSelection();
+                    row.Selected = true;
+                    dgvLicence.FirstDisplayedScrollingRowIndex = row.Index;
+                    row.Cells[0].Selected = true;
+                    break;
+                }
+            }
+        }
     }
 }

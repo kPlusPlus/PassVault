@@ -15,6 +15,7 @@ namespace PassVault
     public partial class Search_Clients : Form
     {
         private Common common = new Common();
+        public int ReturnValue = 0;
         public Search_Clients()
         {
             InitializeComponent();
@@ -45,8 +46,8 @@ namespace PassVault
         }
 
         private void btnExit_Click(object sender, EventArgs e)
-        {            
-            this.Close();            
+        {
+            this.Close();
         }
 
         private void Client_Name_txt_KeyUp(object sender, KeyEventArgs e)
@@ -141,11 +142,11 @@ SELECT ' ODABERI' as Pikula
         {
             if (cmbClientID.SelectedIndex > 0)
             {
-                SearchClient(cmbClientID.Text,null,null);
+                SearchClient(cmbClientID.Text, null, null);
             }
-            else if (cmbClientID.SelectedIndex == 0) 
+            else if (cmbClientID.SelectedIndex == 0)
             {
-                btnClear_Click(sender,e);
+                btnClear_Click(sender, e);
             }
         }
 
@@ -155,9 +156,9 @@ SELECT ' ODABERI' as Pikula
             {
                 SearchClient(null, cmbOIB.Text, null);
             }
-            else if ( cmbOIB.SelectedIndex == 0)
+            else if (cmbOIB.SelectedIndex == 0)
             {
-                btnClear_Click(sender,e);
+                btnClear_Click(sender, e);
             }
         }
 
@@ -165,12 +166,22 @@ SELECT ' ODABERI' as Pikula
         {
             if (cmbCity.SelectedIndex > 0)
             {
-                SearchClient(null,null,cmbCity.Text);
+                SearchClient(null, null, cmbCity.Text);
             }
             else if (cmbCity.SelectedIndex == 0)
             {
-                btnClear_Click(sender,e);
+                btnClear_Click(sender, e);
             }
+        }
+
+        private void dgvClients_DoubleClick(object sender, EventArgs e)
+        {
+            if(dgvClients.SelectedRows.Count > 0)
+            {
+                ReturnValue = int.Parse(dgvClients.SelectedRows[0].Cells[0].Value.ToString());
+                DialogResult = DialogResult.OK;
+                Close();
+            }            
         }
     }
 }

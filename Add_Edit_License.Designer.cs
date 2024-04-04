@@ -167,8 +167,9 @@
             dgvLicence.Location = new System.Drawing.Point(774, 12);
             dgvLicence.MultiSelect = false;
             dgvLicence.Name = "dgvLicence";
-            dgvLicence.Size = new System.Drawing.Size(533, 484);
+            dgvLicence.Size = new System.Drawing.Size(0, 484);
             dgvLicence.TabIndex = 47;
+            dgvLicence.Visible = false;
             // 
             // label3
             // 
@@ -379,6 +380,7 @@
             button10.TabIndex = 20;
             button10.Text = "Q";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button3
             // 
@@ -457,7 +459,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1319, 508);
+            ClientSize = new System.Drawing.Size(781, 508);
             Controls.Add(LicenseTypeID_txt);
             Controls.Add(ClientID_txt);
             Controls.Add(panel2);

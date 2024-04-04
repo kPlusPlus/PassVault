@@ -31,7 +31,11 @@ namespace PassVault
         private void button10_Click(object sender, EventArgs e)
         {
             Search_Clients search_Clients = new Search_Clients();
-            search_Clients.ShowDialog();
+            if(search_Clients.ShowDialog() == DialogResult.OK)
+            {
+                int returnValue = search_Clients.ReturnValue;
+                SelectRowByValue("ID", returnValue.ToString());
+            }            
         }
 
         private void FillDataGridView()
@@ -150,5 +154,22 @@ namespace PassVault
         {
             
         }
+
+        private void SelectRowByValue(string columnName, string value)
+        {
+            foreach (DataGridViewRow row in dgvClients.Rows)
+            {
+                if (row.Cells[columnName].Value != null && row.Cells[columnName].Value.ToString() == value)
+                {
+                    dgvClients.ClearSelection();
+                    row.Selected = true;
+                    dgvClients.FirstDisplayedScrollingRowIndex = row.Index;
+                    row.Cells[0].Selected = true;
+                    break;
+                }
+            }
+        }
+
+        
     }
 }

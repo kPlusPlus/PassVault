@@ -83,6 +83,7 @@
             dgvClients.Name = "dgvClients";
             dgvClients.Size = new System.Drawing.Size(1053, 341);
             dgvClients.TabIndex = 43;
+            dgvClients.DoubleClick += dgvClients_DoubleClick;
             // 
             // Client_Name_lbl
             // 

@@ -351,7 +351,6 @@
             dgvClients.Name = "dgvClients";
             dgvClients.Size = new System.Drawing.Size(202, 434);
             dgvClients.TabIndex = 42;
-            dgvClients.Visible = false;
             // 
             // button7
             // 

@@ -178,7 +178,26 @@ namespace PassVault
         private void button10_Click(object sender, EventArgs e)
         {
             Search_PassVault search_PassVault = new Search_PassVault();
-            search_PassVault.ShowDialog();
+            if( search_PassVault.ShowDialog() == DialogResult.OK )
+            {
+                int returnValue = search_PassVault.ReturnValue;
+                SelectRowByValue("ID", returnValue.ToString());
+            }
+        }
+
+        private void SelectRowByValue(string columnName, string value)
+        {
+            foreach (DataGridViewRow row in dgvPass.Rows)
+            {
+                if (row.Cells[columnName].Value != null && row.Cells[columnName].Value.ToString() == value)
+                {
+                    dgvPass.ClearSelection();
+                    row.Selected = true;
+                    dgvPass.FirstDisplayedScrollingRowIndex = row.Index;
+                    row.Cells[0].Selected = true;
+                    break;
+                }
+            }
         }
     }
 }

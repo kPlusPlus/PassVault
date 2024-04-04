@@ -13,6 +13,7 @@ namespace PassVault
     public partial class Search_PassVault : Form
     {
         private Common common = new Common();
+        public int ReturnValue = 0;
         public Search_PassVault()
         {
             InitializeComponent();
@@ -147,13 +148,23 @@ SELECT ClientID, CAST(ClientID as varchar) + '   ' + Name as Name  FROM dbo.Clie
 
         private void cmbClientID_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmbClientID.SelectedIndex > 0) 
+            if (cmbClientID.SelectedIndex > 0)
             {
                 SearchClient(cmbClientID.SelectedValue.ToString(), null, null);
             }
             else if (cmbClientID.SelectedIndex == 0)
             {
-                btnClear_Click(sender,e);
+                btnClear_Click(sender, e);
+            }
+        }
+
+        private void dgvPassVault_DoubleClick(object sender, EventArgs e)
+        {
+            if (dgvPassVault.SelectedRows.Count > 0)
+            {
+                ReturnValue = int.Parse(dgvPassVault.SelectedRows[0].Cells[0].Value.ToString());
+                DialogResult = DialogResult.OK;
+                Close();
             }
         }
     }
