@@ -349,8 +349,9 @@
             dgvClients.Location = new System.Drawing.Point(565, 68);
             dgvClients.MultiSelect = false;
             dgvClients.Name = "dgvClients";
-            dgvClients.Size = new System.Drawing.Size(202, 434);
+            dgvClients.Size = new System.Drawing.Size(0, 434);
             dgvClients.TabIndex = 42;
+            dgvClients.Visible = false;
             // 
             // button7
             // 
@@ -498,14 +499,14 @@
             panel1.Location = new System.Drawing.Point(0, 0);
             panel1.Margin = new System.Windows.Forms.Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(782, 65);
+            panel1.Size = new System.Drawing.Size(553, 65);
             panel1.TabIndex = 43;
             // 
             // Add_Edit_Clients_frm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(779, 514);
+            ClientSize = new System.Drawing.Size(550, 514);
             Controls.Add(panel2);
             Controls.Add(dgvClients);
             Controls.Add(Tel_lbl);

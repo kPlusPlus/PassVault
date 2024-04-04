@@ -37,6 +37,7 @@
             pictureBox1 = new System.Windows.Forms.PictureBox();
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -145,11 +146,23 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click_1;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            label1.Location = new System.Drawing.Point(163, 29);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(107, 24);
+            label1.TabIndex = 19;
+            label1.Text = "Pass Vault";
+            // 
             // Add_Edit_frm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(290, 388);
+            Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(Heading_lbl);
@@ -178,5 +191,6 @@
         private System.Windows.Forms.Label Heading_lbl;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
     }
 }

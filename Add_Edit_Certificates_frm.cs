@@ -128,6 +128,14 @@ namespace PassVault
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (dgvCertificates.CurrentRow == null)
+            {
+                DataGridViewRow row = dgvCertificates.Rows[0];
+                dgvCertificates.ClearSelection();
+                row.Selected = true;
+                dgvCertificates.FirstDisplayedScrollingRowIndex = row.Index;
+                row.Cells[0].Selected = true;
+            }
             int currentRowIndex = dgvCertificates.CurrentRow.Index;
             int nextIndex = currentRowIndex + 1;
 
