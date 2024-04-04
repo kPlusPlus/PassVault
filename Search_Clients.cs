@@ -144,6 +144,10 @@ SELECT ' ODABERI' as Pikula
             {
                 SearchClient(cmbClientID.Text,null,null);
             }
+            else if (cmbClientID.SelectedIndex == 0) 
+            {
+                btnClear_Click(sender,e);
+            }
         }
 
         private void cmbOIB_SelectedIndexChanged(object sender, EventArgs e)
@@ -152,6 +156,10 @@ SELECT ' ODABERI' as Pikula
             {
                 SearchClient(null, cmbOIB.Text, null);
             }
+            else if ( cmbOIB.SelectedIndex == 0)
+            {
+                btnClear_Click(sender,e);
+            }
         }
 
         private void cmbCity_SelectedIndexChanged(object sender, EventArgs e)
@@ -159,6 +167,10 @@ SELECT ' ODABERI' as Pikula
             if (cmbCity.SelectedIndex > 0)
             {
                 SearchClient(null,null,cmbCity.Text);
+            }
+            else if (cmbCity.SelectedIndex == 0)
+            {
+                btnClear_Click(sender,e);
             }
         }
     }

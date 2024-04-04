@@ -143,7 +143,7 @@
             // cmbClientID
             // 
             cmbClientID.FormattingEnabled = true;
-            cmbClientID.Location = new System.Drawing.Point(248, 63);
+            cmbClientID.Location = new System.Drawing.Point(248, 59);
             cmbClientID.Name = "cmbClientID";
             cmbClientID.Size = new System.Drawing.Size(121, 23);
             cmbClientID.TabIndex = 49;
@@ -152,7 +152,7 @@
             // cmbOIB
             // 
             cmbOIB.FormattingEnabled = true;
-            cmbOIB.Location = new System.Drawing.Point(375, 63);
+            cmbOIB.Location = new System.Drawing.Point(375, 59);
             cmbOIB.Name = "cmbOIB";
             cmbOIB.Size = new System.Drawing.Size(121, 23);
             cmbOIB.TabIndex = 51;
@@ -173,7 +173,7 @@
             // cmbCity
             // 
             cmbCity.FormattingEnabled = true;
-            cmbCity.Location = new System.Drawing.Point(502, 63);
+            cmbCity.Location = new System.Drawing.Point(502, 59);
             cmbCity.Name = "cmbCity";
             cmbCity.Size = new System.Drawing.Size(121, 23);
             cmbCity.TabIndex = 53;
