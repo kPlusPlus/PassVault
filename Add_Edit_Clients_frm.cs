@@ -31,7 +31,7 @@ namespace PassVault
         private void button10_Click(object sender, EventArgs e)
         {
             Search_Clients search_Clients = new Search_Clients();
-            search_Clients.Show();
+            search_Clients.ShowDialog();
         }
 
         private void FillDataGridView()

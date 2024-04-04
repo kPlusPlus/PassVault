@@ -84,7 +84,6 @@ namespace PassVault
                 sWhere = "Address_City = '" + SearchByCity + "'";
             }
 
-
             if (bWhere)
             {
                 Query += " WHERE " + sWhere;

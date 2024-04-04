@@ -120,7 +120,7 @@ namespace PassVault
         }
 
         private void button6_Click(object sender, EventArgs e)
-        {            
+        {
             int currentRowIndex = dgvPass.CurrentRow.Index;
             int nextIndex = currentRowIndex + 1;
 
@@ -173,6 +173,12 @@ namespace PassVault
         private void button9_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Search_PassVault search_PassVault = new Search_PassVault();
+            search_PassVault.ShowDialog();
         }
     }
 }

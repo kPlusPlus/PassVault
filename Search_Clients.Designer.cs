@@ -81,7 +81,7 @@
             dgvClients.Location = new System.Drawing.Point(12, 97);
             dgvClients.MultiSelect = false;
             dgvClients.Name = "dgvClients";
-            dgvClients.Size = new System.Drawing.Size(776, 341);
+            dgvClients.Size = new System.Drawing.Size(1053, 341);
             dgvClients.TabIndex = 43;
             // 
             // Client_Name_lbl
@@ -108,7 +108,8 @@
             // 
             // btnExit
             // 
-            btnExit.Location = new System.Drawing.Point(739, 9);
+            btnExit.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            btnExit.Location = new System.Drawing.Point(1015, 12);
             btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnExit.Name = "btnExit";
             btnExit.Size = new System.Drawing.Size(49, 46);
@@ -119,7 +120,8 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new System.Drawing.Point(682, 9);
+            btnClear.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            btnClear.Location = new System.Drawing.Point(956, 12);
             btnClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnClear.Name = "btnClear";
             btnClear.Size = new System.Drawing.Size(49, 46);
@@ -195,7 +197,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 450);
+            ClientSize = new System.Drawing.Size(1077, 450);
             Controls.Add(cmbCity);
             Controls.Add(label4);
             Controls.Add(cmbOIB);

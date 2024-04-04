@@ -27,5 +27,11 @@ namespace PassVault
             Search_Clients sc = new Search_Clients();
             sc.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Search_PassVault sc = new Search_PassVault();
+            sc.Show();
+        }
     }
 }
