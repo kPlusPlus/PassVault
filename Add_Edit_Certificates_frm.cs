@@ -175,7 +175,33 @@ namespace PassVault
             if (CliendID_txt.Text != string.Empty)
             {
                 comboBox1.SelectedValue = CliendID_txt.Text;
-            }            
+            }
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Search_Certificates search_Certificates = new Search_Certificates();
+            if (search_Certificates.ShowDialog() == DialogResult.OK)
+            {
+                int returnValue = search_Certificates.ReturnValue;
+                SelectRowByValue("ID", returnValue.ToString());
+            }
+        }
+
+        private void SelectRowByValue(string columnName, string value)
+        {
+            foreach (DataGridViewRow row in dgvCertificates.Rows)
+            {
+                if (row.Cells[columnName].Value != null && row.Cells[columnName].Value.ToString() == value)
+                {
+                    dgvCertificates.ClearSelection();
+                    row.Selected = true;
+                    dgvCertificates.FirstDisplayedScrollingRowIndex = row.Index;
+                    row.Cells[0].Selected = true;
+                    break;
+                }
+            }
+        }
+
     }
 }

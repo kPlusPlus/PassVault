@@ -304,6 +304,7 @@
             button10.TabIndex = 20;
             button10.Text = "Q";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button3
             // 
@@ -407,6 +408,7 @@
             CliendID_txt.Name = "CliendID_txt";
             CliendID_txt.Size = new System.Drawing.Size(88, 26);
             CliendID_txt.TabIndex = 82;
+            CliendID_txt.Visible = false;
             // 
             // Add_Edit_Certificates_frm
             // 

@@ -133,5 +133,32 @@ namespace PassVault
         {
 
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Search_LicenseType search_LicenseType = new Search_LicenseType();
+            if (search_LicenseType.ShowDialog() == DialogResult.OK)
+            {
+                int returnValue = search_LicenseType.ReturnValue;
+                SelectRowByValue("ID", returnValue.ToString());
+            }
+        }
+
+        private void SelectRowByValue(string columnName, string value)
+        {
+            foreach (DataGridViewRow row in dgvLicenceType.Rows)
+            {
+                if (row.Cells[columnName].Value != null && row.Cells[columnName].Value.ToString() == value)
+                {
+                    dgvLicenceType.ClearSelection();
+                    row.Selected = true;
+                    dgvLicenceType.FirstDisplayedScrollingRowIndex = row.Index;
+                    row.Cells[0].Selected = true;
+                    break;
+                }
+            }
+        }
+
+
     }
 }

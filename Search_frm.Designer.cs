@@ -62,6 +62,7 @@
             button4.TabIndex = 24;
             button4.Text = "Search Certificates";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -73,6 +74,7 @@
             button3.TabIndex = 22;
             button3.Text = "Search LIcense Types";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 

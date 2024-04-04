@@ -39,5 +39,17 @@ namespace PassVault
             Search_License sc = new Search_License();
             sc.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Search_Certificates sc = new Search_Certificates();
+            sc.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Search_LicenseType sc = new Search_LicenseType();
+            sc.Show();
+        }
     }
 }
