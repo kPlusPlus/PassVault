@@ -109,7 +109,7 @@
             // 
             // btnExit
             // 
-            btnExit.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            btnExit.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             btnExit.Location = new System.Drawing.Point(1015, 12);
             btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnExit.Name = "btnExit";
@@ -121,7 +121,7 @@
             // 
             // btnClear
             // 
-            btnClear.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             btnClear.Location = new System.Drawing.Point(956, 12);
             btnClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnClear.Name = "btnClear";

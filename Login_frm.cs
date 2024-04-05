@@ -55,6 +55,9 @@ namespace PassVault
                 if (iCount == 1)
                 {
                     userid = Convert.ToInt32(reader["ID"]);
+                    Globals.userid = userid;
+                    Globals.username = reader["Username"].ToString();
+                    Globals.Access_Level = reader["Access_Level"].ToString();
                 }
             }
 
