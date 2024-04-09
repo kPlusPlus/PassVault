@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search_License));
             txtMAC = new System.Windows.Forms.TextBox();
             cmbClientName = new System.Windows.Forms.ComboBox();
             label4 = new System.Windows.Forms.Label();
@@ -181,6 +182,7 @@
             Controls.Add(btnExit);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Name = "Search_License";
             Text = "Search_License";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

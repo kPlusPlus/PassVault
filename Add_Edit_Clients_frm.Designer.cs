@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Edit_Clients_frm));
             ID_txt = new System.Windows.Forms.TextBox();
             ID_lbl = new System.Windows.Forms.Label();
             Heading_lbl = new System.Windows.Forms.Label();
@@ -535,6 +536,7 @@
             Controls.Add(ID_lbl);
             Controls.Add(ID_txt);
             Controls.Add(panel1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "Add_Edit_Clients_frm";
             Text = "Akdamar Pass Vault";

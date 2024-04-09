@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search_Clients));
             pictureBox1 = new System.Windows.Forms.PictureBox();
             label1 = new System.Windows.Forms.Label();
             dgvClients = new System.Windows.Forms.DataGridView();
@@ -212,6 +213,7 @@
             Controls.Add(dgvClients);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Name = "Search_Clients";
             Text = "Search_Clients";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Edit_frm));
             Clients_botun = new System.Windows.Forms.Button();
             Pass_Vault_Records_botun = new System.Windows.Forms.Button();
             LIcense_Types_botun = new System.Windows.Forms.Button();
@@ -172,6 +173,7 @@
             Controls.Add(Pass_Vault_Records_botun);
             Controls.Add(pictureBox1);
             Controls.Add(Clients_botun);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "Add_Edit_frm";
             Text = "Akdamar Pass Vault";

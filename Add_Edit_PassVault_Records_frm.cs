@@ -75,7 +75,8 @@ namespace PassVault
                 bindingSource1.EndEdit();
                 common.adapter.Update(common.ds, common.ds.Tables[0].TableName);
                 MessageBox.Show("Data saved successfully. ");
-                dgvPass.Refresh();
+                FillDataGridView();
+                //dgvPass.Refresh();
             }
             catch (Exception ex)
             {

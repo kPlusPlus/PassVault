@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Edit_Certificates_frm));
             Comment_lbl = new System.Windows.Forms.Label();
             Comment_txt = new System.Windows.Forms.TextBox();
             Expire_lbl = new System.Windows.Forms.Label();
@@ -436,6 +437,7 @@
             Controls.Add(ID_lbl);
             Controls.Add(ID_txt);
             Controls.Add(dgvCertificates);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "Add_Edit_Certificates_frm";
             Text = "Akdamar Pass Vault";

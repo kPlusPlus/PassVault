@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search_LicenseType));
             pictureBox1 = new System.Windows.Forms.PictureBox();
             label1 = new System.Windows.Forms.Label();
             btnClear = new System.Windows.Forms.Button();
@@ -182,6 +183,7 @@
             Controls.Add(btnExit);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Name = "Search_LicenseType";
             Text = "Search_LicenseType";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

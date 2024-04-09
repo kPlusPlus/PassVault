@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Edit_License));
             Heading_lbl = new System.Windows.Forms.Label();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             bindingSource1 = new System.Windows.Forms.BindingSource(components);
@@ -486,6 +487,7 @@
             Controls.Add(Name_lbl);
             Controls.Add(Heading_lbl);
             Controls.Add(pictureBox1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Name = "Add_Edit_License";
             Text = "Add_Edit_License";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

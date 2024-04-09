@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Edit_License_Types_frm));
             Heading_lbl = new System.Windows.Forms.Label();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             ID_lbl = new System.Windows.Forms.Label();
@@ -319,6 +320,7 @@
             Controls.Add(ID_lbl);
             Controls.Add(Heading_lbl);
             Controls.Add(pictureBox1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "Add_Edit_License_Types_frm";
             Text = "Akdamar Pass Vault";
