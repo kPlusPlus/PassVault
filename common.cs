@@ -11,8 +11,8 @@ namespace PassVault
 
     public class Common
     {
-        public static string dsnName = "xPVS";
-        public static string connectionString = $"DSN={dsnName};";
+        public static string dsnName = Globals.dsnName; // "xPVS";
+        public static string connectionString = Globals.connectionString; // $"DSN={dsnName};";
         public OdbcDataAdapter adapter;
         public DataSet ds;
 
