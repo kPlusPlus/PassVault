@@ -30,7 +30,8 @@ namespace PassVault
 
         private void FillDataGridView()
         {
-            string Query = "SELECT * FROM dbo.PassVault_tbl;";
+            string Query = "SELECT * FROM dbo.PassVault_tbl WHERE AL <= " + Globals.Access_Level.Trim() + " ;";
+
             common.ds = common.GetDataSet(Query);
 
             bindingSource1.DataSource = common.ds;

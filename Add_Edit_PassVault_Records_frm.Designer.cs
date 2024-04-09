@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Edit_PassVault_Records_frm));
             Comment_lbl = new System.Windows.Forms.Label();
             textBox12 = new System.Windows.Forms.TextBox();
             textBox11 = new System.Windows.Forms.TextBox();
@@ -157,10 +158,10 @@
             // textBox2
             // 
             textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            textBox2.Location = new System.Drawing.Point(286, 121);
+            textBox2.Location = new System.Drawing.Point(275, 121);
             textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             textBox2.Name = "textBox2";
-            textBox2.Size = new System.Drawing.Size(104, 26);
+            textBox2.Size = new System.Drawing.Size(133, 26);
             textBox2.TabIndex = 2;
             // 
             // Heading_lbl
@@ -198,7 +199,7 @@
             // textBox14
             // 
             textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 238);
-            textBox14.Location = new System.Drawing.Point(450, 118);
+            textBox14.Location = new System.Drawing.Point(450, 125);
             textBox14.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             textBox14.Name = "textBox14";
             textBox14.Size = new System.Drawing.Size(47, 26);
@@ -259,7 +260,7 @@
             panel1.Location = new System.Drawing.Point(0, 0);
             panel1.Margin = new System.Windows.Forms.Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(562, 65);
+            panel1.Size = new System.Drawing.Size(1278, 65);
             panel1.TabIndex = 95;
             // 
             // pictureBox2
@@ -282,9 +283,8 @@
             dgvPass.Location = new System.Drawing.Point(504, 81);
             dgvPass.MultiSelect = false;
             dgvPass.Name = "dgvPass";
-            dgvPass.Size = new System.Drawing.Size(45, 434);
+            dgvPass.Size = new System.Drawing.Size(761, 434);
             dgvPass.TabIndex = 96;
-            dgvPass.Visible = false;
             // 
             // bindingSource1
             // 
@@ -422,7 +422,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(561, 527);
+            ClientSize = new System.Drawing.Size(1277, 527);
             Controls.Add(panel2);
             Controls.Add(dgvPass);
             Controls.Add(Password_lbl);
@@ -443,6 +443,7 @@
             Controls.Add(ID_lbl);
             Controls.Add(textBox1);
             Controls.Add(panel1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "Add_Edit_PassVault_Records_frm";
             Text = "Akdamar Pass Vault";

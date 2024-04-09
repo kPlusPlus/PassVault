@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search_PassVault));
             btnClear = new System.Windows.Forms.Button();
             btnExit = new System.Windows.Forms.Button();
             dgvPassVault = new System.Windows.Forms.DataGridView();
@@ -210,6 +211,7 @@
             Controls.Add(dgvPassVault);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Name = "Search_PassVault";
             Text = "Search_PassVault";
             ((System.ComponentModel.ISupportInitialize)dgvPassVault).EndInit();

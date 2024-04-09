@@ -22,12 +22,11 @@ namespace PassVault
         }
 
         private void FillDataGridView()
-        {
-            string Query = "SELECT * FROM dbo.PassVault_tbl;";
+        {            
+            string Query = "SELECT * FROM dbo.PassVault_tbl WHERE AL <= " + Globals.Access_Level.Trim() + " ;";
             common.ds = common.GetDataSet(Query);
 
             dgvPassVault.DataSource = common.ds.Tables[0];
-
         }
 
         private void FillCombo()
@@ -37,15 +36,21 @@ namespace PassVault
 -- cmbbox 1
 SELECT 0 as ClientID,' ODABERI' as Name
 UNION ALL
-SELECT ClientID,Name FROM dbo.Clients_tbl ORDER BY Name;
+SELECT ClientID,Name FROM dbo.Clients_tbl 
+WHERE ClientID IN (SELECT ClientID FROM dbo.PassVault_tbl WHERE AL = " + Globals.Access_Level.Trim() + @")
+ORDER BY Name;
 -- cmbbox 2
 SELECT 0 as ID,' ODABERI' as [Username]
 UNION ALL
-SELECT ID,[Username] FROM dbo.PassVault_tbl ORDER BY [Username];
+SELECT ID,[Username] FROM dbo.PassVault_tbl 
+WHERE ID IN (SELECT ID FROM dbo.PassVault_tbl WHERE AL = " + Globals.Access_Level.Trim() + @")
+ORDER BY [Username];
 -- cmbbox 3
 SELECT 0 as ClientID,' ODABERI' as Name
 UNION ALL
-SELECT ClientID, CAST(ClientID as varchar) + '   ' + Name as Name  FROM dbo.Clients_tbl ORDER BY Name;
+SELECT ClientID, CAST(ClientID as varchar) + '   ' + Name as Name  FROM dbo.Clients_tbl 
+WHERE ClientID IN (SELECT ClientID FROM dbo.PassVault_tbl WHERE AL = " + Globals.Access_Level.Trim() + @")
+ORDER BY Name;
 ";
             dataSet = common.GetDataSet(Query);
             DataTable dt = dataSet.Tables[0];
@@ -116,6 +121,7 @@ SELECT ClientID, CAST(ClientID as varchar) + '   ' + Name as Name  FROM dbo.Clie
             if (bWhere)
             {
                 Query += " WHERE " + sWhere;
+                Query += " AND AL <= " + Globals.Access_Level.Trim() + "; ";
                 common.ds = common.GetDataSet(Query);
                 dgvPassVault.DataSource = common.ds.Tables[0];
             }

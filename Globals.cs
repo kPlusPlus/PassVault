@@ -13,7 +13,7 @@ namespace PassVault
         public static string Access_Level = string.Empty;
         public static int userid = 0;
 
-        // *** DB connect
+        // *** DB connect parameters
         public static string dsnName = "xPVS";
         public static string connectionString = $"DSN={dsnName};";
     }
