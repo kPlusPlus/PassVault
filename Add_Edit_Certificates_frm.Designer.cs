@@ -368,7 +368,7 @@
             dgvCertificates.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             dgvCertificates.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dgvCertificates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCertificates.Location = new System.Drawing.Point(504, 12);
+            dgvCertificates.Location = new System.Drawing.Point(567, 12);
             dgvCertificates.MultiSelect = false;
             dgvCertificates.Name = "dgvCertificates";
             dgvCertificates.Size = new System.Drawing.Size(49, 495);
